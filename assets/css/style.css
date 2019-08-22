@@ -7,44 +7,62 @@ html {
 }
 
 body {
-  background: url();
-  /* background-color: black; */
-  /* color: white */
+  /* background: url(); */
+  background-color: #4C5355;
+  color: #CBCDCB;
 }
 
-/* Nav Bar */
-.navbar-transparent,
-.navbar-nav,
-.active {
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0 1px #ffffff inset;
+/* ============= Nav Bar ============= */
+.navbar-transparent {
+  background: rgba(76, 83, 85, .8);
   margin-top: 0;
 }
 
-.navbar-transparent {
-  box-shadow: 0 0 0 #000000;
+.nav-link {
+  color: #CBCDCB;
 }
 
-.navbar {
-  padding: 30px 0;
-  transition: all 1s ease-out 0s;
-  z-index: 3000;
+.nav-link:hover,
+#selected:hover {
+  background-color: #CBCDCB;
+  color: #C44B4F;
 }
 
-.navbar,
-.navbar-nav,
-.active {
-  border-radius: 4px;
-  color: #ffffff;
-  transition: all 0.2s ease-out 0s;
+#selected {
+  background-color: rgba(0, 0, 0, 0);
+  color: #CBCDCB;
+  border: 3px solid #607D86;
 }
 
-/* About Me */
+/* ============== Title ============== */
+.jumbotron {
+  color: #C44B4F;
+}
 
-/* Resume */
+.titleName {
+  font-size: 44px
+}
 
-/* Skills */
+.titleAdj {
+  font-size: 18px;
+}
 
-/* Portfolio */
+.titleBox {
+  border: 3px solid #607D86;
+  width: 500px;
+  margin: 0 auto;
+  font-size: 44px;
+}
+
+/* ============ About Me  ============ */
+.btn-floating i {
+  color: #C44B4F;
+}
+
+/* ============= Resume  ============= */
+
+/* ============= Skills  ============= */
+
+/* ============ Portfolio ============ */
 
 
