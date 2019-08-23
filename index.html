@@ -2,6 +2,7 @@
 <html lang='en-US'>
   <head>
     <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Luke Boyle Portfolio </title>
 
     <!-- CSS -->
@@ -9,8 +10,9 @@
     <link rel='stylesheet' href='assets/css/reset.css'>
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS -->
@@ -18,250 +20,121 @@
   </head>
 
   <body>
-    <div id="wrapper">
-      <!-- Nav Bar -->
-        <div class="sticky-top navbar-transparent">
-          <ul class="navbar nav-pills justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" id="selected" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resume</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Download Resume</a>
-                </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-          </ul>
+    <!-- Nav Bar -->
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li>
+          <a href="#">Download Resume</a>
+        </li>
+      </ul>
+      
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+              <li class="nav-item">
+                <a class="nav-link" id="selected" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link dropdown-trigger" data-toggle="dropdown1" href="#">Resume<i class="material-icons right">arrow_drop_down</i></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    <!-- Container -->
+    <div class="container">
+      
+      <!-- Title -->
+        <div class="row">
+          <div class="col s12">
+            <h1 class="titleName">Luke Boyle</h1>
+            <p class="titleAdj">Creative - Professional - Passionate</p>
+            <div class="titleBox"> Full Stack Developer </div>
+          </div>
+        </div>
+    
+      <!-- About Me -->
+        <div class="row">
+          <!-- About Me Description -->
+          <div class="col s12 m4">
+            <div class="aboutMeDes">
+              <h3> About Me </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id posuere nunc. Quisque eu felis odio. Sed pharetra nibh et ante finibus, id varius risus eleifend. Vestibulum non lectus mi. Ut tincidunt scelerisque justo, vel pharetra turpis iaculis in. Vestibulum elementum felis vel facilisis feugiat. Nulla egestas libero quis accumsan ultricies. </p>
+            </div>
+          </div>
+  
+          <!-- About Me Photo -->
+          <div class="col s6 m4">
+            <div class="aboutMeImg">
+              <img class="headshot" src="https://via.placeholder.com/150"> 
+            </div>
+          </div>
+  
+          <!-- About Me Personal Info -->
+          <div class="col s6 m4">
+            <div class="aboutMeInfo">
+              <h3> Personal Information </h3>
+              <p class="info"> Name: Luke Boyle </p>
+              <p class="info"> Age: 22 Years </p>
+              <p class="info"> Phone: (336) 380-7229 </p>
+              <p class="info"> Email: boylelukem@gmail.com </p>
+              <p class="info"> Address: Burlington, North Carolina </p>
+            </div>
+  
+            <div class="aboutMeSocial">
+              <ul>
+                <li> 
+                  <!-- linkedIn -->
+                  <a href="#" class="btn-floating waves-effect waves-light white">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <!-- Github -->
+                  <a href="#" class="btn-floating waves-effect waves-light white">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      <!-- Edu/Work -->
+        <div class="row">
+          
         </div>
 
+      <!-- Programming/Hobbies -->
+        <div class="row">
+          
+        </div>
+  
+      <!-- Portfolio -->
+        <div class="row">
+          
+        </div>
 
-      <div class="content">
-          <!-- Jumbotron-->
-            <div class="jumbotron">
-              <h1 class="font-weight-bold text-center titleName">Luke Boyle</h1>
-              <p class="text-center titleAdj">Creative - Professional - Passionate</p>
-              <div class="text-center titleBox"> Full Stack Developer </div>
-            </div>
-    
-        <div class="container">
-          <!-- About Me -->
-            <div class="row">
-              <!-- About Me Description -->
-              <div class="col-sm-12 col-med-4">
-                <div class="aboutMeDes">
-                  <h3> About Me </h3>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id posuere nunc. Quisque eu felis odio. Sed pharetra nibh et ante finibus, id varius risus eleifend. Vestibulum non lectus mi. Ut tincidunt scelerisque justo, vel pharetra turpis iaculis in. Vestibulum elementum felis vel facilisis feugiat. Nulla egestas libero quis accumsan ultricies. </p>
-                </div>
-              </div>
-      
-              <!-- About Me Photo -->
-              <div class="col-sm-6 col-med-4">
-                <div class="aboutMeImg">
-                  <img class="headshot" src="https://via.placeholder.com/150"> 
-                </div>
-              </div>
-      
-              <!-- About Me Personal Info -->
-              <div class="col-sm-6 col-med-4">
-                <div class="aboutMeInfo">
-                  <h3> Personal Information </h3>
-                  <p class="info"> Name: Luke Boyle </p>
-                  <p class="info"> Age: 22 Years </p>
-                  <p class="info"> Phone: (336) 380-7229 </p>
-                  <p class="info"> Email: boylelukem@gmail.com </p>
-                  <p class="info"> Address: Burlington, North Carolina </p>
-                </div>
-      
-                <div class="aboutMeSocial">
-                  <ul>
-                    <li> 
-                      <!-- linkedIn -->
-                      <a href="#" class="btn-floating waves-effect waves-light white">
-                        <i class="fa fa-linkedin">
-                        </i>
-                      </a>
-                      <!-- Github -->
-                      <a href="#" class="btn-floating waves-effect waves-light white">
-                        <i class="fa fa-github">
-                        </i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-      
-          <!-- Edu/Work -->
-            <div class="row">
-              <div class="timeline-bar" style="top: 80px; height: 418px;"></div>
-
-              <div class="col-xs-12 col-sm-12 col-lg-6 padding-bottom">
-                  <h3 class="title title-resume">Education</h3>
-                  <div class="block-grey">
-                      <div id="education-slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                          <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3048px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 508px;"><div class="item">
-                              <table>
-                                  <tbody><tr>
-                                      <td class="font-weight-m width-td">Name</td>
-                                      <td>School of Art</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Address</td>
-                                      <td>Melbourne VIC</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Period</td>
-                                      <td>1996-2000</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Level</td>
-                                      <td>A level</td>
-                                  </tr>
-                              </tbody></table>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
-                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                  veniam, quis nostrud exercitation ullamco laboris nisi.
-                              </p>
-                          </div></div><div class="owl-item" style="width: 508px;"><div class="item">
-                              <table>
-                                  <tbody><tr>
-                                      <td class="font-weight-m width-td">Name</td>
-                                      <td>School of Art</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Address</td>
-                                      <td>Melbourne VIC</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Period</td>
-                                      <td>1996-2000</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Level</td>
-                                      <td>A level</td>
-                                  </tr>
-                              </tbody></table>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
-                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                  veniam, quis nostrud exercitation ullamco laboris nisi.
-                              </p>
-                          </div></div><div class="owl-item" style="width: 508px;"><div class="item">
-                              <table>
-                                  <tbody><tr>
-                                      <td class="font-weight-m width-td">Name</td>
-                                      <td>School of Art</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Address</td>
-                                      <td>Melbourne VIC</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Period</td>
-                                      <td>1996-2000</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Level</td>
-                                      <td>A level</td>
-                                  </tr>
-                              </tbody></table>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
-                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                  veniam, quis nostrud exercitation ullamco laboris nisi.
-                              </p>
-                          </div></div></div></div>
-                          
-                          
-                      <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
-                  </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-lg-6">
-                  <h3 class="title title-resume">Work</h3>
-                  <div class="block-grey">
-                      <div id="work-slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                          <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 2032px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 508px;"><div class="item">
-                              <table>
-                                  <tbody><tr>
-                                      <td class="font-weight-m width-td1">Company Name</td>
-                                      <td>Themeforest</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Address</td>
-                                      <td>Melbourne VIC</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Period</td>
-                                      <td>2007-2012</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Post</td>
-                                      <td>Web designer</td>
-                                  </tr>
-                              </tbody></table>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
-                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                  veniam, quis nostrud exercitation ullamco laboris nisi.
-                              </p>
-                          </div></div><div class="owl-item" style="width: 508px;"><div class="item">
-                              <table>
-                                  <tbody><tr>
-                                      <td class="font-weight-m width-td1">Company Name</td>
-                                      <td>Themeforest</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Address</td>
-                                      <td>Melbourne VIC</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Period</td>
-                                      <td>2012-2015</td>
-                                  </tr>
-                                  <tr>
-                                      <td class="font-weight-m">Post</td>
-                                      <td>Web designer</td>
-                                  </tr>
-                              </tbody></table>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
-                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                  veniam, quis nostrud exercitation ullamco laboris nisi.
-                              </p>
-                          </div></div></div></div>
-                          
-
-                      <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
-                  </div>
-              </div>
-      
-            </div>
-      
-          <!-- Programming/Hobbies -->
-            <div class="row">
-      
-            </div>
-      
-          <!-- Portfolio -->
-            <div class="row">
-      
-            </div>
-
-        </div> <!--Close Container-->
-      </div> <!--Close Contents-->
-    </div> <!--Close Wrapper-->
+    </div> <!--Close Container-->
 
     <!-- Scripts -->
     <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <!-- Javascript -->

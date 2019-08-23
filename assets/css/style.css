@@ -13,9 +13,10 @@ body {
 }
 
 /* ============= Nav Bar ============= */
-.navbar-transparent {
-  background: rgba(76, 83, 85, .8);
-  margin-top: 0;
+nav {
+  background-color: rgba(76, 83, 85, .8);
+  height: 85px;
+  padding: 7px;
 }
 
 .nav-link {
@@ -32,7 +33,9 @@ body {
   background-color: rgba(0, 0, 0, 0);
   color: #CBCDCB;
   border: 3px solid #607D86;
+  height: 64px;
 }
+
 
 /* ============== Title ============== */
 .jumbotron {
@@ -59,10 +62,17 @@ body {
   color: #C44B4F;
 }
 
+h3 {
+  color: #C44B4F;
+  font-weight: bolder
+}
+
 /* ============= Resume  ============= */
 
 /* ============= Skills  ============= */
 
+
 /* ============ Portfolio ============ */
+
 
 
