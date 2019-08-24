@@ -67,7 +67,29 @@ h3 {
   font-weight: bolder
 }
 
+.info {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.aboutMeSocial {
+  margin-top: 10px;
+}
+
 /* ============= Resume  ============= */
+.timelineBar {
+  background-color: aqua;
+}
+
+.work,
+.education {
+  background-color: #CBCDCB;
+  color: #4C5355;
+}
+
+/* .arrow { */
+  /* color: #CBCDCB; */
+/* } */
 
 /* ============= Skills  ============= */
 

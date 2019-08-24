@@ -10,9 +10,8 @@
     <link rel='stylesheet' href='assets/css/reset.css'>
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Bootstrap CSS-->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS -->
@@ -20,126 +19,154 @@
   </head>
 
   <body>
-    <!-- Nav Bar -->
-      <!-- Dropdown Structure -->
-      <ul id="dropdown1" class="dropdown-content">
-        <li>
-          <a href="#">Download Resume</a>
-        </li>
-      </ul>
-      
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <!-- Nav Bar -->
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li>
+        <a href="#">Download Resume</a>
+      </li>
+    </ul>
+    
+    <div class="navbar-fixed">
+      <nav role="navigation">
+        <div class="nav-wrapper container">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-              <li class="nav-item">
-                <a class="nav-link" id="selected" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" id="selected" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link dropdown-trigger" data-toggle="dropdown1" href="#">Resume<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  <!-- Title -->
+    <div class="section" id="index-banner">
+      <div class="container">
+
+        <h1 class="titleName header center col s12">Luke Boyle</h1>
+
+        <div class="row center">
+          <p class="titleAdj header col s12">Creative - Professional - Passionate</p>
+        </div>
+
+        <div class="row center">
+          <div class="titleBox col s12"> Full Stack Developer </div>
+        </div>
+
+      </div>
+    </div>
+
+  <!-- Container -->
+  <div class="container">
+  
+  <!-- About Me -->
+    <div class="section" id="aboutMe">
+      <div class="row">
+        <!-- About Me Description -->
+        <div class="col s12 m4">
+          <div class="aboutMeDes">
+            <h3> About Me </h3>
+            <p class="info"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id
+              posuere nunc. Quisque eu felis odio. Sed pharetra nibh et ante finibus, id varius risus eleifend. Vestibulum
+              non lectus mi. Ut tincidunt scelerisque justo, vel pharetra turpis iaculis in. Vestibulum elementum felis vel
+              facilisis feugiat. Nulla egestas libero quis accumsan ultricies. </p>
+          </div>
+        </div>
+
+        <!-- About Me Photo -->
+        <div class="col s6 m4">
+          <div class="aboutMeImg center">
+            <img class="headshot" src="https://via.placeholder.com/150">
+          </div>
+        </div>
+
+        <!-- About Me Personal Info -->
+        <div class="col s6 m4">
+          <div class="aboutMeInfo">
+            <h3> Personal Information </h3>
+            <p class="info"> Name: <span style="padding-left: 31px"> Luke Boyle </span></p>
+            <p class="info"> Age: <span style="padding-left: 45px"> 22 Years </span></p>
+            <p class="info"> Phone: <span style="padding-left: 29px"> (336) 380-7229 </span></p>
+            <p class="info"> Email: <span style="padding-left: 37px"> boylelukem@gmail.com </span></p>
+            <p class="info"> Address: <span style="padding-left: 20px"> Burlington, North Carolina </span></p>
+          </div>
+
+          <div class="aboutMeSocial">
+            <ul>
+              <li>
+                <!-- linkedIn -->
+                <a href="#" class="btn-floating waves-effect waves-light white">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <!-- Github -->
+                <a href="#" class="btn-floating waves-effect waves-light white">
+                  <i class="fa fa-github"></i>
+                </a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link dropdown-trigger" data-toggle="dropdown1" href="#">Resume<i class="material-icons right">arrow_drop_down</i></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-
             </ul>
           </div>
-        </nav>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Edu/Work -->
+    <div class="row">
+      <div class="col s12 m5 eduBox">
+        <div class="card-panel education">
+          <span class="arrow"><i class="material-icons right">play_arrow</i></span>
+          <span>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+        </div>
       </div>
 
-    <!-- Container -->
-    <div class="container">
-      
-      <!-- Title -->
-        <div class="row">
-          <div class="col s12">
-            <h1 class="titleName">Luke Boyle</h1>
-            <p class="titleAdj">Creative - Professional - Passionate</p>
-            <div class="titleBox"> Full Stack Developer </div>
-          </div>
-        </div>
-    
-      <!-- About Me -->
-        <div class="row">
-          <!-- About Me Description -->
-          <div class="col s12 m4">
-            <div class="aboutMeDes">
-              <h3> About Me </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id posuere nunc. Quisque eu felis odio. Sed pharetra nibh et ante finibus, id varius risus eleifend. Vestibulum non lectus mi. Ut tincidunt scelerisque justo, vel pharetra turpis iaculis in. Vestibulum elementum felis vel facilisis feugiat. Nulla egestas libero quis accumsan ultricies. </p>
-            </div>
-          </div>
-  
-          <!-- About Me Photo -->
-          <div class="col s6 m4">
-            <div class="aboutMeImg">
-              <img class="headshot" src="https://via.placeholder.com/150"> 
-            </div>
-          </div>
-  
-          <!-- About Me Personal Info -->
-          <div class="col s6 m4">
-            <div class="aboutMeInfo">
-              <h3> Personal Information </h3>
-              <p class="info"> Name: Luke Boyle </p>
-              <p class="info"> Age: 22 Years </p>
-              <p class="info"> Phone: (336) 380-7229 </p>
-              <p class="info"> Email: boylelukem@gmail.com </p>
-              <p class="info"> Address: Burlington, North Carolina </p>
-            </div>
-  
-            <div class="aboutMeSocial">
-              <ul>
-                <li> 
-                  <!-- linkedIn -->
-                  <a href="#" class="btn-floating waves-effect waves-light white">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <!-- Github -->
-                  <a href="#" class="btn-floating waves-effect waves-light white">
-                    <i class="fa fa-github"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-      <!-- Edu/Work -->
-        <div class="row">
-          
-        </div>
+      <div class="col m1 timelineBar"></div>
 
-      <!-- Programming/Hobbies -->
-        <div class="row">
-          
+      <div class="col s12 m5 workBox">
+        <div class="card-panel work">
+            <span class="arrow"><i class="material-icons right">play_arrow</i></span>
+          <span>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
         </div>
-  
-      <!-- Portfolio -->
-        <div class="row">
-          
-        </div>
+      </div>
+    </div>
 
-    </div> <!--Close Container-->
+  <!-- Programming/Hobbies -->
+    <div class="row">
 
-    <!-- Scripts -->
-    <!-- Materialize JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- jQuery -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <!-- Javascript -->
-    <script src='assets/javascript/main.js'></script>
-  
+    </div>
+
+  <!-- Portfolio -->
+    <div class="row">
+
+    </div>
+
+  </div> <!--Close Container-->
+
+  <!-- Scripts -->
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <!-- Javascript -->
+  <script src='assets/javascript/main.js'></script>
+
   </body>
 
 </html>
