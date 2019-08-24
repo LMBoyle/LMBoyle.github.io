@@ -81,15 +81,38 @@ h3 {
   background-color: aqua;
 }
 
+#title {
+  color: #C44B4F;
+  font-weight: bolder
+}
+
 .work,
 .education {
   background-color: #CBCDCB;
   color: #4C5355;
+  position: relative;
 }
 
-/* .arrow { */
-  /* color: #CBCDCB; */
-/* } */
+.eduInfo,
+.workInfo {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.arrow {
+  color: #CBCDCB;
+  position: absolute;
+}
+
+.eduArrow {
+  right: -39px;
+  top: 60px;
+}
+
+.workArrow {
+  left: -39px;
+  transform: rotate(0.5turn);
+}
 
 /* ============= Skills  ============= */
 
