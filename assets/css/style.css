@@ -89,7 +89,7 @@ h3 {
   margin-left: -2px;
   position: absolute;
   left: 50%;
-  height: 50%;
+  height: 215px;
   top: 115px;
 }
 
@@ -186,6 +186,12 @@ h3 {
   transform: rotate(0.5turn);
 }
 
+#eduLeft,
+#eduRight,
+#workLeft,
+#workRight {
+  margin-top: 10px; 
+}
 
 /* ============= Skills  ============= */
 .skillBack {
