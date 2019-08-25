@@ -77,8 +77,30 @@ h3 {
 }
 
 /* ============= Resume  ============= */
+.secResume {
+  position: relative;
+}
+
 .timelineBar {
   background-color: aqua;
+  content: '';
+  width: 4px;
+  opacity: 0.2;
+  margin-left: -2px;
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  top: 95px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: red;
+  border: 1px solid black;
 }
 
 #title {
@@ -100,21 +122,69 @@ h3 {
 }
 
 .arrow {
-  color: #CBCDCB;
   position: absolute;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid #CBCDCB; 
+  overflow: hidden;
+  box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+}
+
+.arrow:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #999;
+  transform: rotate(45deg); /* Prefixes... */
+  top: 75px;
+  left: 25px;
+  box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
 }
 
 .eduArrow {
-  right: -39px;
+  right: -10px;
   top: 60px;
 }
 
 .workArrow {
-  left: -39px;
+  left: -10px;
   transform: rotate(0.5turn);
 }
 
+
 /* ============= Skills  ============= */
+.skillBack {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  background: #CBCDCB;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.skillBack i {
+  width: inherit;
+  display: inline-block;
+  text-align: center;
+  font-size: 35px;
+  line-height: 51px;
+}
+
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3 {
+  color: #264de4;
+}
+
+.proSkill.fa-github {
+  color: black;
+}
+
 
 
 /* ============ Portfolio ============ */
