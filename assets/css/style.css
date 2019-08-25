@@ -82,32 +82,65 @@ h3 {
 }
 
 .timelineBar {
-  background-color: aqua;
+  background-color: #CBCDCB;
   content: '';
   width: 4px;
   opacity: 0.2;
   margin-left: -2px;
   position: absolute;
   left: 50%;
-  height: 100%;
-  top: 95px;
+  height: 50%;
+  top: 115px;
 }
 
+/* Timeline Dots */
 .dot {
-  height: 8px;
-  width: 8px;
+  height: 12px;
+  width: 12px;
+  margin-left: -4px;
   display: block;
   position: absolute;
   border-radius: 50%;
-  background-color: red;
+  background-color: #C44B4F;
   border: 1px solid black;
 }
 
+.dot:hover{
+  background-color: white;
+  border: 1px solid red;
+}
+
+#eduState {
+  top: 0;
+}
+
+#workDoby {
+  top: 45px;
+}
+
+#eduElon {
+  top: 80px;
+}
+
+#workRec {
+  top: 100px;
+}
+
+#eduPT {
+  top: 135px;
+}
+
+#eduCode {
+  top: 170px;
+}
+
+/* Timeline Titles */
 #title {
   color: #C44B4F;
   font-weight: bolder
 }
 
+/* Timeline cards */
 .work,
 .education {
   background-color: #CBCDCB;
@@ -144,11 +177,12 @@ h3 {
 
 .eduArrow {
   right: -10px;
-  top: 60px;
+  top: 3px;
 }
 
 .workArrow {
   left: -10px;
+  top: 41px;
   transform: rotate(0.5turn);
 }
 
