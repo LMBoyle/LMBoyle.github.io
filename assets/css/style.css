@@ -21,6 +21,7 @@ nav {
 
 .nav-link {
   color: #CBCDCB;
+  border: 3px solid transparent;
 }
 
 .nav-link:hover,
@@ -33,9 +34,7 @@ nav {
   background-color: rgba(0, 0, 0, 0);
   color: #CBCDCB;
   border: 3px solid #607D86;
-  height: 64px;
 }
-
 
 /* ============== Title ============== */
 .jumbotron {
@@ -213,19 +212,44 @@ h3 {
   line-height: 51px;
 }
 
+.proSkill.fa-github,
+.fa-dumbbell,
+.fa-book-reader,
+.fa-gamepad {
+  color: black;
+}
+
 .fa-html5 {
   color: #e34c26;
 }
 
-.fa-css3 {
+.fa-css3-alt {
   color: #264de4;
 }
 
-.proSkill.fa-github {
-  color: black;
+.fa-js-square {
+  color: #f0db4f;
 }
 
+.fa-bootstrap {
+  color: #563d7c;
+}
 
+.fa-node-js {
+  color: #3c873a;
+}
+
+.fa-gitlab {
+  color: #e24329;
+}
+
+.fa-feather-alt {
+  color: white;
+}
+
+.fa-cookie-bite {
+  color: rgb(170, 93, 30);
+}
 
 /* ============ Portfolio ============ */
 
