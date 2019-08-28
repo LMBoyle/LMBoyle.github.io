@@ -19,10 +19,6 @@ nav {
   padding: 7px;
 }
 
-nav ul {
-  /* line-height: 33px; */
-}
-
 i.material-icons.right {
   line-height: 42px;
   margin-left: 5px;
@@ -36,7 +32,7 @@ li i {
 nav .nav-wrapper i,
 .nav-item {
   height: 44px;
-  line-height: 42px
+  line-height: 42px;
 }
 
 .nav-link {
@@ -63,6 +59,20 @@ nav .nav-wrapper i,
   height: 657px;
   color: #CBCDCB;
   position: relative;
+  width: 100%
+}
+
+#indexOverlay {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  top: 0
+}
+
+.titleContain {
+  position: relative;
+  height: 657px;
 }
 
 #titleInfo {
@@ -73,7 +83,8 @@ nav .nav-wrapper i,
 }
 
 .titleName {
-  font-size: 44px
+  font-size: 80px;
+  text-shadow: 4px 4px 6px #000000;
 }
 
 .titleAdj {
