@@ -327,3 +327,10 @@ div.imgContain {
 .fa-code {
   color: black;
 }
+
+/* ============= Footer  ============= */
+.page-footer,
+.footer-copyright {
+  background-color: rgb(76, 83, 85);
+  text-align: center
+}
