@@ -20,13 +20,25 @@ nav {
 }
 
 nav ul {
-  line-height: 43px;
+  /* line-height: 33px; */
 }
 
 i.material-icons.right {
-  line-height: 45px;
+  line-height: 42px;
   margin-left: 5px;
 }
+
+li i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+nav .nav-wrapper i,
+.nav-item {
+  height: 44px;
+  line-height: 42px
+}
+
 .nav-link {
   color: #CBCDCB;
   border: 3px solid transparent;
