@@ -57,8 +57,19 @@ nav .nav-wrapper i,
 }
 
 /* ============== Title ============== */
-.jumbotron {
-  color: #C44B4F;
+#index-banner {
+  background: url(../Images/background1.jpg);
+  background-size: cover;
+  height: 657px;
+  color: #CBCDCB;
+  position: relative;
+}
+
+#titleInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .titleName {
