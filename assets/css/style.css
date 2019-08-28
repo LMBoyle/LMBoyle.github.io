@@ -15,10 +15,18 @@ body {
 /* ============= Nav Bar ============= */
 nav {
   background-color: rgba(76, 83, 85, .8);
-  height: 85px;
+  height: 64px;
   padding: 7px;
 }
 
+nav ul {
+  line-height: 43px;
+}
+
+i.material-icons.right {
+  line-height: 45px;
+  margin-left: 5px;
+}
 .nav-link {
   color: #CBCDCB;
   border: 3px solid transparent;
