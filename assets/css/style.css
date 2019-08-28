@@ -24,7 +24,7 @@ i.material-icons.right {
   margin-left: 5px;
 }
 
-li i {
+.nav-item i {
   padding-right: 10px;
   font-size: 20px;
 }
@@ -106,12 +106,27 @@ nav .nav-wrapper i,
 
 h3 {
   color: #C44B4F;
-  font-weight: bolder
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+img {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .info {
   font-size: 14px;
   line-height: 28px;
+
+}
+
+.perInfo {
+  border-bottom: 1px solid rgba(196, 75, 79, .5);
+  padding: 6px 0;
+}
+
+.headshot {
+  margin-top: 108px
 }
 
 .aboutMeSocial {
