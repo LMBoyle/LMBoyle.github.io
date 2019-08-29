@@ -141,15 +141,25 @@ img {
   position: relative;
 }
 
-.timelineBar {
-  background-color: #CBCDCB;
-  content: '';
+.secTime {
   width: 4px;
   margin-left: -2px;
   position: absolute;
   left: 50%;
   height: 215px;
   top: 115px;
+}
+
+.timelineBar {
+  background-color: #CBCDCB;
+  opacity: .63;
+  content: '';
+  width: 4px;
+  margin-left: -2px;
+  position: absolute;
+  left: 50%;
+  height: 215px;
+  top: 0;
 }
 
 /* Timeline Dots */
@@ -179,19 +189,19 @@ img {
 }
 
 #eduElon {
-  top: 80px;
-}
-
-#workRec {
   top: 100px;
 }
 
+#workRec {
+  top: 128px;
+}
+
 #eduPT {
-  top: 135px;
+  top: 170px;
 }
 
 #eduCode {
-  top: 170px;
+  top: 205px;
 }
 
 /* Timeline Titles */
@@ -237,12 +247,12 @@ img {
 
 .eduArrow {
   right: -10px;
-  top: 3px;
+  top: 5px;
 }
 
 .workArrow {
   left: -10px;
-  top: 41px;
+  top: 50px;
   transform: rotate(0.5turn);
 }
 
