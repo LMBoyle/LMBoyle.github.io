@@ -7,14 +7,19 @@ html {
 }
 
 body {
-  /* background: url(); */
-  background-color: #4C5355;
+  background-color: #222629;
   color: #CBCDCB;
+}
+
+h3 {
+  color: #86c232;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 /* ============= Nav Bar ============= */
 nav {
-  background-color: rgba(76, 83, 85, 1);
+  background-color: #222629;
   height: 64px;
   padding: 7px;
 }
@@ -42,14 +47,13 @@ nav .nav-wrapper i,
 
 .nav-link:hover,
 #selected:hover {
-  background-color: #CBCDCB;
-  color: #C44B4F;
+  /* background-color: #222629; */
+  color: #61892f;
 }
 
 #selected {
-  background-color: rgba(0, 0, 0, 0);
   color: #CBCDCB;
-  border: 3px solid #607D86;
+  border: 3px solid #86c232;
 }
 
 /* ============== Title ============== */
@@ -57,7 +61,6 @@ nav .nav-wrapper i,
   background: url(../Images/background1.jpg);
   background-size: cover;
   height: 657px;
-  color: #CBCDCB;
   position: relative;
   width: 100%
 }
@@ -73,6 +76,7 @@ nav .nav-wrapper i,
 .titleContain {
   position: relative;
   height: 657px;
+  color: #CBCDCB;
 }
 
 #titleInfo {
@@ -83,7 +87,7 @@ nav .nav-wrapper i,
 }
 
 .titleName {
-  font-size: 80px;
+  font-size: 100px;
   text-shadow: 4px 4px 6px #000000;
 }
 
@@ -93,7 +97,7 @@ nav .nav-wrapper i,
 }
 
 .titleBox {
-  border: 3px solid #607D86;
+  border: 3px solid #61892f;
   font-size: 50px;
   line-height: 100px;
   text-shadow: 4px 4px 6px #000000;
@@ -101,13 +105,7 @@ nav .nav-wrapper i,
 
 /* ============ About Me  ============ */
 .btn-floating i {
-  color: #C44B4F;
-}
-
-h3 {
-  color: #C44B4F;
-  font-weight: bolder;
-  text-shadow: 1px 1px 2px #000000;
+  color: #61892f;
 }
 
 img {
@@ -117,11 +115,10 @@ img {
 .info {
   font-size: 14px;
   line-height: 28px;
-
 }
 
 .perInfo {
-  border-bottom: 1px solid rgba(196, 75, 79, .5);
+  border-bottom: 1px solid rgba(97, 137, 47, .5);
   padding: 6px 0;
 }
 
@@ -142,7 +139,6 @@ img {
   background-color: #CBCDCB;
   content: '';
   width: 4px;
-  opacity: 0.2;
   margin-left: -2px;
   position: absolute;
   left: 50%;
@@ -158,13 +154,14 @@ img {
   display: block;
   position: absolute;
   border-radius: 50%;
-  background-color: #C44B4F;
-  border: 1px solid black;
+  background-color: #86c232;
+  border: 1px solid #474b4f;
 }
 
-.dot:hover{
-  background-color: white;
-  border: 1px solid red;
+.dot:hover,
+.dotSelected {
+  background-color: #474b4f;
+  border: 1px solid #86c232;
 }
 
 #eduState {
@@ -193,15 +190,15 @@ img {
 
 /* Timeline Titles */
 #title {
-  color: #C44B4F;
+  color: #61892f;
   font-weight: bolder
 }
 
 /* Timeline cards */
 .work,
 .education {
-  background-color: #CBCDCB;
-  color: #4C5355;
+  background-color: #6b6e70;
+  color: #CBCDCB;
   position: relative;
 }
 
@@ -215,7 +212,7 @@ img {
   position: absolute;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 10px solid #CBCDCB; 
+  border-left: 10px solid #6b6e70; 
   overflow: hidden;
   box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
 }
@@ -256,7 +253,7 @@ img {
   height: 50px;
   line-height: 50px;
   padding: 0;
-  background: #CBCDCB;
+  background: #6b6e70;
   border-radius: 50%;
   position: relative;
   display: inline-block;
@@ -350,7 +347,7 @@ div.imgContain {
 .imgText {
   position: absolute;
   top: -70%;
-  color: white;
+  color: #CBCDCB;
   font-size: 16px;
 }
 
@@ -359,7 +356,7 @@ div.imgContain {
   height: 38px;
   line-height: 38px;
   padding: 0;
-  background: #CBCDCB;
+  background: #6b6e70;
   border-radius: 50%;
   position: relative;
   display: inline-block;
