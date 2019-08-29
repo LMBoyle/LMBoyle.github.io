@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #222629;
+  background-color: #474b4f;
   color: #CBCDCB;
 }
 
@@ -15,6 +15,12 @@ h3 {
   color: #86c232;
   font-weight: bolder;
   text-shadow: 1px 1px 2px #000000;
+}
+
+#containerCard {
+  background-color: #222629; 
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* ============= Nav Bar ============= */
@@ -123,7 +129,7 @@ img {
 }
 
 .headshot {
-  margin-top: 108px
+  margin-top: 21px;
 }
 
 .aboutMeSocial {
