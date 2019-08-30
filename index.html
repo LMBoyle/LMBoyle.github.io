@@ -20,14 +20,7 @@
 
   <body>
     <header>
-      <!-- Nav Bar -->
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-          <li>
-            <a target="_blank" href="assets/Images/Resume.Current.pdf">Download Resume</a>
-          </li>
-        </ul>
-        
+      <!-- Nav Bar -->        
         <div class="navbar-fixed">
           <nav role="navigation">
             <div class="nav-wrapper container">
@@ -42,7 +35,13 @@
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link dropdown-trigger" data-toggle="dropdown1" href="#"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
+                  <div class="dropdown">
+                      <a class="nav-link" href="#"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
+                      <div class="dropdown-content">
+                        <a class="nav-link" href="#"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
+                        <a target="_blank" href="assets/Images/Resume.Current.pdf">Download Resume</a>
+                      </div>
+                  </div>
                 </li>
     
                 <li class="nav-item">
