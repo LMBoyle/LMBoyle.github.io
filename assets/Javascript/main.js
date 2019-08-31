@@ -1,14 +1,13 @@
 // VARS ===============================
-
+var sections = $('.section');
+var nav = $('header');
+var nav_height = nav.outerHeight();
+var text = $('#text');
 
 
 // FUNCTIONS ==========================
 
 // On scroll, change selected nav item
-  var sections = $('.section');
-  var nav = $('header');
-  var nav_height = nav.outerHeight();
-  
   function changedSelected() {
     var cur_pos = $(this).scrollTop();
   
@@ -27,8 +26,8 @@
 
 // On click, scroll to div
   $(".nav-link").click(function() {
-    var text = $('#text');
-    
+    console.log(this.text)
+
     switch (this.text) {
       case ("Home"):
         scroll(".secTitle");
@@ -36,7 +35,7 @@
       case ("About"):
         scroll(".secAbout");
         break;
-      case ("Resume"):
+      case ("Resumearrow_drop_down"):
         scroll(".secResume");
         break;
       case ("Skills"):
@@ -45,14 +44,25 @@
       case ("Portfolio"):
         scroll(".secPort");
         break;
+      default:
+        scroll(".secTitle");
     }
 
     function scroll(sec) {
-      $('html,body').animate({
-        scrollTop: $(sec).offset().top},
-        'slow');
+      var top = $(sec).offset().top - nav_height;
+
+      if (sec === ".secTitle") {
+        $('html,body').animate({
+          scrollTop: $(sec).top},
+          'slow');
+        }
+      else {
+        $('html,body').animate({
+          scrollTop: top},
+          'slow');
+        }
       }
-  });
+    });
 
 
 // CALLBACK ===========================
