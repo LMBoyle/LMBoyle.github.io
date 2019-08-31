@@ -155,18 +155,21 @@ nav .nav-wrapper i,
 }
 
 .info {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 28px;
 }
 
 .perInfo {
   border-bottom: 1px solid rgba(97, 137, 47, .5);
   padding: 6px 0;
+  line-height: 43px;
 }
 
 .headshot {
   margin-top: 21px;
   border: 3px solid white;
+  height: 250px;
+  width: 250px;
 }
 
 .aboutMeSocial {
@@ -257,8 +260,8 @@ nav .nav-wrapper i,
 
 .eduInfo,
 .workInfo {
-  font-size: 14px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 43px;
   border-bottom: 1px solid rgba(97, 137, 47, .8);
   text-shadow: 2px 2px 3px #222629;
 }
