@@ -433,7 +433,7 @@ div.imgContain {
 }
 
 .imgContain:hover .portImg {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .imgContain:hover .imgButtons {
