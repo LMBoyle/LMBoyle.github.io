@@ -327,18 +327,18 @@ nav .nav-wrapper i,
   line-height: 51px;
 }
 
+/* Tooltips */
 .skillBack .tooltipText {
   visibility: hidden;
-  width: 120px;
+  width: 105px;
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
+  top: 125%;
+  left: 65%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
@@ -347,12 +347,13 @@ nav .nav-wrapper i,
 .skillBack .tooltipText::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  transform: rotate(0.5turn);
 }
 
 .skillBack:hover .tooltipText {
@@ -360,6 +361,7 @@ nav .nav-wrapper i,
   opacity: 1;
 }
 
+/* Skills/Hobbies Colors */
 .proSkill.fa-github,
 .fa-dumbbell,
 .fa-book-reader,
