@@ -54,6 +54,7 @@ nav .nav-wrapper i,
 .nav-link {
   color: #CBCDCB;
   border: 3px solid transparent;
+  border-radius: 5px;
 }
 
 .nav-link:hover,
@@ -66,6 +67,7 @@ nav .nav-wrapper i,
 #selected {
   color: #CBCDCB;
   border: 3px solid #86c232;
+  border-radius: 5px;
 }
 
 /* Dropdown */
@@ -143,7 +145,7 @@ nav .nav-wrapper i,
 }
 
 .titleBox {
-  border: 3px solid #61892f;
+  border: 5px solid #61892f;
   font-size: 50px;
   line-height: 100px;
   text-shadow: 4px 4px 6px #000000;
@@ -159,6 +161,10 @@ nav .nav-wrapper i,
   line-height: 28px;
 }
 
+.aboutMeDes {
+  padding-top: 12px;
+}
+
 .perInfo {
   border-bottom: 1px solid rgba(97, 137, 47, .5);
   padding: 6px 0;
@@ -167,7 +173,8 @@ nav .nav-wrapper i,
 
 .headshot {
   margin-top: 21px;
-  border: 3px solid white;
+  border: 5px solid white;
+  border-radius: 5px;
   height: 250px;
   width: 250px;
 }
@@ -198,8 +205,8 @@ nav .nav-wrapper i,
   margin-left: -2px;
   position: absolute;
   left: 50%;
-  height: 215px;
-  top: 0;
+  height: 335px;
+  top: 20px;
 }
 
 /* Timeline Dots */
@@ -221,27 +228,27 @@ nav .nav-wrapper i,
 }
 
 #eduState {
-  top: 0;
+  top: 15px;
 }
 
 #workDoby {
-  top: 45px;
+  top: 95px;
 }
 
 #eduElon {
-  top: 100px;
-}
-
-#workRec {
-  top: 128px;
-}
-
-#eduPT {
   top: 170px;
 }
 
+#workRec {
+  top: 220px;
+}
+
+#eduPT {
+  top: 280px;
+}
+
 #eduCode {
-  top: 205px;
+  top: 345px;
 }
 
 /* Timeline Titles */
@@ -294,12 +301,12 @@ nav .nav-wrapper i,
 
 .eduArrow {
   right: -10px;
-  top: 5px;
+  top: 6px;
 }
 
 .workArrow {
   left: -10px;
-  top: 50px;
+  top: 85px;
   transform: rotate(0.5turn);
 }
 
@@ -334,8 +341,8 @@ nav .nav-wrapper i,
 .skillBack .tooltipText {
   visibility: hidden;
   width: 105px;
-  background-color: #555;
-  color: #fff;
+  background-color: #474b4f;
+  color: #CBCDCB;
   text-align: center;
   border-radius: 6px;
   position: absolute;
@@ -355,7 +362,7 @@ nav .nav-wrapper i,
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #474b4f transparent transparent transparent;
   transform: rotate(0.5turn);
 }
 
@@ -489,5 +496,21 @@ div.imgContain {
 .page-footer,
 .footer-copyright {
   background-color: #222629;
-  text-align: center
+  text-align: center;
+}
+
+.page-footer {
+  padding-top: 0;
+}
+
+.footerSocial a{
+  color: #CBCDCB;
+}
+
+.footerSocial i{
+  font-size: 20px;
+}
+
+#footerText {
+  line-height: 17px;
 }
