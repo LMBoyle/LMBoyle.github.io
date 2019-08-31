@@ -6,28 +6,9 @@ var text = $('#text');
 
 
 // FUNCTIONS ==========================
-
-// On scroll, change selected nav item
-  function changedSelected() {
-    var cur_pos = $(this).scrollTop();
-  
-    sections.each(function() {
-      var top = $(this).offset().top - nav_height;
-      var bottom = top + $(this).outerHeight();
-  
-      if (cur_pos >= top && cur_pos <= bottom) {
-        nav.find('a').removeAttr("id");
-  
-        $(this).attr('id', 'selected');
-        // nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-      };
-    });
-  };
-
-// On click, scroll to div
-  $(".nav-link").click(function() {
-    console.log(this.text)
-
+// * On click, scroll to div
+// TODO Smooth scroll to top
+  function scrollSelected() {
     switch (this.text) {
       case ("Home"):
         scroll(".secTitle");
@@ -62,10 +43,33 @@ var text = $('#text');
           'slow');
         }
       }
+    };
+
+// TODO On scroll, change selected nav item
+  function changedSelected() {
+    var cur_pos = $(this).scrollTop();
+  
+    sections.each(function() {
+      var top = $(this).offset().top - nav_height;
+      var bottom = top + $(this).outerHeight();
+  
+      if (cur_pos >= top && cur_pos <= bottom) {
+        nav.find('a').removeAttr("id");
+  
+        $(this).attr('id', 'selected');
+        // nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      };
     });
+  };
+
+// TODO On button click, show new school/work
+// TODO On button click, move school/work arrow
+
+
+
 
 
 // CALLBACK ===========================
 $(document).ready(function () {
-  // $(window).on('scroll', changedSelected());
+  $(".nav-link").click(scrollSelected);
 })
