@@ -99,22 +99,46 @@ var workNum = 0;
 // TODO On scroll, change selected nav item
   function changedSelected() {
     var cur_pos = $(this).scrollTop();
-  
-    sections.each(function() {
-      var top = $(this).offset().top - nav_height;
-      var bottom = top + $(this).outerHeight();
-  
-      if (cur_pos >= top && cur_pos <= bottom) {
-        nav.find('a').removeAttr("id");
-  
-        $(this).attr('id', 'selected');
-        // nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-      };
-    });
+    console.log(cur_pos.toFixed(2))
+
+    if (0 < cur_pos && cur_pos < 656) {
+      $(".navAbout").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navSkill").removeAttr("id", "selected");
+      $(".navPort").removeAttr("id", "selected");
+      $(".navHome").attr("id", "selected");
+    }
+    else if (656 < cur_pos && cur_pos < 1149) {
+      $(".navHome").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navSkill").removeAttr("id", "selected");
+      $(".navPort").removeAttr("id", "selected");
+      $(".navAbout").attr("id", "selected");
+    }
+    else if (1149 < cur_pos && cur_pos < 1746) {
+      $(".navAbout").removeAttr("id", "selected");
+      $(".navHome").removeAttr("id", "selected");
+      $(".navSkill").removeAttr("id", "selected");
+      $(".navPort").removeAttr("id", "selected");
+      $(".navRes").attr("id", "selected");
+    }
+    else if (1746 < cur_pos && cur_pos < 1940) {
+      $(".navAbout").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navPort").removeAttr("id", "selected");
+      $(".navSkill").attr("id", "selected");
+    }
+    else if (1940 < cur_pos) {
+      $(".navAbout").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navSkill").removeAttr("id", "selected");
+      $(".navPort").attr("id", "selected");
+    }
   };
 
 // On button click, show new school/work
-// TODO On button click, move school/work arrow
   function resumeCycle() {
     var btn = this.id;
 
@@ -138,7 +162,7 @@ var workNum = 0;
     }
   }
 
-  // Show education based on number
+// Show education based on number
   function eduShow(n) {
     if (n >= education.length){
       eduNum = 0;
@@ -173,7 +197,7 @@ var workNum = 0;
     moveArrow();
   }
 
-  // Show work based on number
+// Show work based on number
   function workShow(n) {
     if (n >= work.length){
       workNum = 0;
@@ -206,6 +230,7 @@ var workNum = 0;
     moveArrow();
   }
 
+// On dot click, change style and show correct card
   function chooseDot() {
     var dot = this.id;
 
@@ -242,6 +267,7 @@ var workNum = 0;
     }
   }
 
+// On button click, move school/work arrow
   function moveArrow() {
     switch (eduNum) {
       case (0):
@@ -300,6 +326,8 @@ var workNum = 0;
 
 // CALLBACK ===========================
 $(document).ready(function () {
+  $(window).scroll(changedSelected);
+
   $(".nav-link").click(scrollSelected);
 
   // On Resume Card Button Clicks
