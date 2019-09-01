@@ -223,6 +223,17 @@ var workNum = 0;
       default:
         $(".eduArrow").attr("style", education[0].arrow)
     }
+
+    switch (workNum) {
+      case (0):
+        $(".workArrow").attr("style", work[0].arrow);
+        break;
+      case (1):
+        $(".workArrow").attr("style", work[1].arrow);
+        break;
+      default:
+        $(".workArrow").attr("style", work[0].arrow)
+    }
   }
 
 // CALLBACK ===========================
