@@ -206,6 +206,42 @@ var workNum = 0;
     moveArrow();
   }
 
+  function chooseDot() {
+    var dot = this.id;
+
+    switch (dot) {
+      case ("eduState"):
+        eduNum = 0;
+        eduShow(eduNum);
+        break;
+      case ("workDoby"):
+        workNum = 0;
+        workShow(workNum);
+        break;
+      case ("eduElon"):
+        eduNum = 1;
+        eduShow(eduNum);
+        break;
+      case ("workRec"):
+        workNum = 1;
+        workShow(workNum);
+        break;
+      case ("eduPT"):
+        eduNum = 2;
+        eduShow(eduNum);
+        break;
+      case ("eduCode"):
+        eduNum = 3;
+        eduShow(eduNum);
+        break;
+      default:
+        eduNum = 0;
+        eduShow(eduNum);
+        workNum = 0;
+        workShow(workNum);
+    }
+  }
+
   function moveArrow() {
     switch (eduNum) {
       case (0):
@@ -268,5 +304,8 @@ $(document).ready(function () {
 
   // On Resume Card Button Clicks
   $(".resBtn").click(resumeCycle);
+
+  // On Dot Select
+  $(".dot").click(chooseDot);
 
 })
