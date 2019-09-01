@@ -107,7 +107,7 @@ var workNum = 0;
     });
   };
 
-// TODO On button click, show new school/work
+// On button click, show new school/work
 // TODO On button click, move school/work arrow
   function resumeCycle() {
     var btn = this.id;
@@ -132,6 +132,7 @@ var workNum = 0;
     }
   }
 
+  // Show education based on number
   function eduShow(n) {
     if (n >= education.length){
       eduNum = 0;
@@ -146,30 +147,58 @@ var workNum = 0;
     var city = education[eduNum].address;
     var des = education[eduNum].des;
 
-    $("#eduPlace").text(place);
+    if (place === education[2].name) {
+      $("#eduPlace").text(place);
+      $("#eduPlace").attr("style", "font-size: 13px;")
+    }
+    else if (place === education[3].name) {
+      $("#eduPlace").text(place);
+      $("#eduPlace").attr("style", "font-size: 11px;")
+    }
+    else {
+      $("#eduPlace").text(place);
+      $("#eduPlace").attr("style", "font-size: 18px;")
+    }
+
     $("#eduLength").text(year);
     $("#eduCity").text(city);
     $("#eduDes").text(des);
 
-    /*
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-      */
+    moveArrow();
   }
 
+  // Show work based on number
+  function workShow(n) {
+    if (n >= work.length){
+      workNum = 0;
+    }
+    else if (n === -1){
+      workNum = work.length - 1;
+    }
+    console.log("Working Num: ", workNum)
 
+    var place = work[workNum].name;
+    var year = work[workNum].period;
+    var city = work[workNum].address;
+    var role = work[workNum].role;
+    var des = work[workNum].des;
 
+    if (place === work[0].name) {
+      $("#workPlace").text(place);
+      $("#workPlace").attr("style", "font-size: 14px;")
+    }
+    else {
+      $("#workPlace").text(place);
+      $("#workPlace").attr("style", "font-size: 18px;")
+    }
+
+    $("#workLength").text(year);
+    $("#workCity").text(city);
+    $("#workRole").text(role);
+    $("#workDes").text(des);
+
+    moveArrow();
+  }
 
 // CALLBACK ===========================
 $(document).ready(function () {
