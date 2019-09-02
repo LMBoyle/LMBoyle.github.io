@@ -87,49 +87,49 @@ var workNum = 0;
         $('html,body').animate({
           scrollTop: $(sec).top},
           'slow');
-        }
+      }
       else {
         $('html,body').animate({
           scrollTop: top},
           'slow');
-        }
       }
-    };
+    }
+  };
 
 // * On scroll, change selected nav item
   function changedSelected() {
     var cur_pos = $(this).scrollTop();
     // console.log(cur_pos.toFixed(2))
 
-    if (0 < cur_pos && cur_pos < 656) {
+    if (0 < cur_pos && cur_pos < 655) {
       $(".navAbout").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navSkill").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
       $(".navHome").attr("id", "selected");
     }
-    else if (656 < cur_pos && cur_pos < 1149) {
+    else if (655 < cur_pos && cur_pos < 1120) {
       $(".navHome").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navSkill").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
       $(".navAbout").attr("id", "selected");
     }
-    else if (1149 < cur_pos && cur_pos < 1746) {
+    else if (1120 < cur_pos && cur_pos < 1700) {
       $(".navAbout").removeAttr("id", "selected");
       $(".navHome").removeAttr("id", "selected");
       $(".navSkill").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
       $(".navRes").attr("id", "selected");
     }
-    else if (1746 < cur_pos && cur_pos < 1940) {
+    else if (1700 < cur_pos && cur_pos < 1863) {
       $(".navAbout").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
       $(".navSkill").attr("id", "selected");
     }
-    else if (1940 < cur_pos) {
+    else if (1863 < cur_pos) {
       $(".navAbout").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
@@ -170,7 +170,7 @@ var workNum = 0;
     else if (n === -1){
       eduNum = education.length - 1;
     }
-    console.log("Working Num: ", eduNum)
+    // console.log("Working Num: ", eduNum)
 
     var place = education[eduNum].name;
     var year = education[eduNum].period;
@@ -203,7 +203,7 @@ var workNum = 0;
     else if (n === -1){
       workNum = work.length - 1;
     }
-    console.log("Working Num: ", workNum)
+    // console.log("Working Num: ", workNum)
 
     var place = work[workNum].name;
     var year = work[workNum].period;
