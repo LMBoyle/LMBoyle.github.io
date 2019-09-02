@@ -20,14 +20,14 @@ var education = [
     arrow: "top: 161px",
   },
   {
-    name: "National Academy of Sports Medicine",
+    name: "Nat'l Acad of Sports Medicine",
     period: "2018",
     address: "Burlington, North Carolina",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id posuere nunc. Quisque eu felis odio.",
     arrow: "top: 270px",
   },
   {
-    name: "The Coding Boot Campt at UNC-Chapel Hill",
+    name: "The Coding Boot Camp at UNC-Chapel Hill",
     period: "2019",
     address: "Raleigh, North Carolina",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id posuere nunc. Quisque eu felis odio.",
@@ -58,7 +58,7 @@ var workNum = 0;
 
 // FUNCTIONS ==========================
 // * On click, scroll to div
-// TODO Smooth scroll to top
+// ! Smooth scroll to top
   function scrollSelected() {
     switch (this.text) {
       case ("Home"):
@@ -96,10 +96,10 @@ var workNum = 0;
       }
     };
 
-// TODO On scroll, change selected nav item
+// * On scroll, change selected nav item
   function changedSelected() {
     var cur_pos = $(this).scrollTop();
-    console.log(cur_pos.toFixed(2))
+    // console.log(cur_pos.toFixed(2))
 
     if (0 < cur_pos && cur_pos < 656) {
       $(".navAbout").removeAttr("id", "selected");
@@ -138,7 +138,7 @@ var workNum = 0;
     }
   };
 
-// On button click, show new school/work
+// * On button click, show new school/work
   function resumeCycle() {
     var btn = this.id;
 
@@ -162,7 +162,7 @@ var workNum = 0;
     }
   }
 
-// Show education based on number
+// * Show education based on number
   function eduShow(n) {
     if (n >= education.length){
       eduNum = 0;
@@ -178,18 +178,16 @@ var workNum = 0;
     var des = education[eduNum].des;
 
     if (place === education[2].name) {
-      $("#eduPlace").text(place);
-      $("#eduPlace").attr("style", "font-size: 13px;")
+      $("#eduPlace").attr("style", "font-size: 15px;")
     }
     else if (place === education[3].name) {
-      $("#eduPlace").text(place);
-      $("#eduPlace").attr("style", "font-size: 11px;")
+      $("#eduPlace").attr("style", "font-size: 10px;")
     }
     else {
-      $("#eduPlace").text(place);
       $("#eduPlace").attr("style", "font-size: 18px;")
     }
 
+    $("#eduPlace").text(place);
     $("#eduLength").text(year);
     $("#eduCity").text(city);
     $("#eduDes").text(des);
@@ -197,7 +195,7 @@ var workNum = 0;
     moveArrow();
   }
 
-// Show work based on number
+// * Show work based on number
   function workShow(n) {
     if (n >= work.length){
       workNum = 0;
@@ -214,14 +212,15 @@ var workNum = 0;
     var des = work[workNum].des;
 
     if (place === work[1].name) {
-      $("#workPlace").text(place);
-      $("#workPlace").attr("style", "font-size: 14px;")
+      $("#workPlace").attr("style", "font-size: 13px;");
+      $("#workRole").attr("style", "font-size: 16px;");
     }
     else {
-      $("#workPlace").text(place);
-      $("#workPlace").attr("style", "font-size: 18px;")
+      $("#workPlace").attr("style", "font-size: 18px;");
+      $("#workRole").attr("style", "font-size: 17px;");
     }
 
+    $("#workPlace").text(place);
     $("#workLength").text(year);
     $("#workCity").text(city);
     $("#workRole").text(role);
@@ -230,7 +229,7 @@ var workNum = 0;
     moveArrow();
   }
 
-// On dot click, change style and show correct card
+// * On dot click, change style and show correct card
   function chooseDot() {
     var dot = this.id;
 
@@ -326,14 +325,16 @@ var workNum = 0;
 
 // CALLBACK ===========================
 $(document).ready(function () {
+  // When scrolling, change the selected nav item
   $(window).scroll(changedSelected);
 
+  // Scroll to section when nav item is clicked
   $(".nav-link").click(scrollSelected);
 
-  // On Resume Card Button Clicks
+  // On resume card button clicks
   $(".resBtn").click(resumeCycle);
 
-  // On Dot Select
+  // On dot select
   $(".dot").click(chooseDot);
 
 })
