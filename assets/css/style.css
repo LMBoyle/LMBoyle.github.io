@@ -495,6 +495,22 @@ div.imgContain {
 }
 
 /* ============ Contact ============== */
+.secContact {
+  position: relative;
+}
+
+#contactOverlay {
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 65px;
+  font-weight: bolder;
+  padding-top: 17%
+}
 
 input::placeholder,
 textarea::placeholder {
@@ -528,7 +544,6 @@ form label {
   font-size: 20px;
   color: #CBCDCB;
 }
-
 
 /* ============= Footer  ============= */
 .page-footer,
