@@ -76,6 +76,9 @@ var workNum = 0;
       case ("Portfolio"):
         scroll(".secPort");
         break;
+      case ("Contact Me"):
+        scroll(".secContact");
+        break;
       default:
         scroll(".secTitle");
     }
@@ -99,13 +102,14 @@ var workNum = 0;
 // * On scroll, change selected nav item
   function changedSelected() {
     var cur_pos = $(this).scrollTop();
-    // console.log(cur_pos.toFixed(2))
+    console.log(cur_pos.toFixed(2));
 
     if (0 < cur_pos && cur_pos < 655) {
       $(".navAbout").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navSkill").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
+      $(".navContact").removeAttr("id", "selected");
       $(".navHome").attr("id", "selected");
     }
     else if (655 < cur_pos && cur_pos < 1120) {
@@ -113,6 +117,7 @@ var workNum = 0;
       $(".navRes").removeAttr("id", "selected");
       $(".navSkill").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
+      $(".navContact").removeAttr("id", "selected");
       $(".navAbout").attr("id", "selected");
     }
     else if (1120 < cur_pos && cur_pos < 1700) {
@@ -120,6 +125,7 @@ var workNum = 0;
       $(".navHome").removeAttr("id", "selected");
       $(".navSkill").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
+      $(".navContact").removeAttr("id", "selected");
       $(".navRes").attr("id", "selected");
     }
     else if (1700 < cur_pos && cur_pos < 1863) {
@@ -127,14 +133,24 @@ var workNum = 0;
       $(".navRes").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navPort").removeAttr("id", "selected");
+      $(".navContact").removeAttr("id", "selected");
       $(".navSkill").attr("id", "selected");
     }
-    else if (1863 < cur_pos) {
+    else if (1863 < cur_pos && cur_pos < 2388) {
       $(".navAbout").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navRes").removeAttr("id", "selected");
       $(".navSkill").removeAttr("id", "selected");
+      $(".navContact").removeAttr("id", "selected");
       $(".navPort").attr("id", "selected");
+    }
+    else if (2388 < cur_pos) {
+      $(".navAbout").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navRes").removeAttr("id", "selected");
+      $(".navSkill").removeAttr("id", "selected");
+      $(".navPort").removeAttr("id", "selected");
+      $(".navContact").attr("id", "selected");
     }
   };
 
