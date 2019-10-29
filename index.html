@@ -3,6 +3,7 @@
   <head>
     <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/Images/favicon.ico" type="image/x-icon"/>
     <title> Luke Boyle Portfolio </title>
 
     <!-- CSS -->
@@ -14,6 +15,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/db6e28a860.js"></script>
+    <!-- Font Mfixx Icons -->
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
     <!-- CSS -->
     <link rel='stylesheet' href='assets/css/style.css'>
   </head>
@@ -92,7 +95,7 @@
           <div class="row section secAbout">
             <h3 style="text-align:center"> About Me </h3>
             <!-- About Me Description -->
-            <div class="col s12 m4">
+            <div class="col s12 l4">
               <div class="aboutMeDes">
                 <p class="info"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id
                   posuere nunc. Quisque eu felis odio. Sed pharetra nibh et ante finibus, id varius risus eleifend. Vestibulum
@@ -102,14 +105,14 @@
             </div>
     
             <!-- About Me Photo -->
-            <div class="col s6 m4">
+            <div class="col s12 l4">
               <div class="aboutMeImg center">
-                <img class="headshot" src="https://via.placeholder.com/250">
+                <img class="headshot" src="assets/Images/headshotCompressed.png">
               </div>
             </div>
     
             <!-- About Me Personal Info -->
-            <div class="col s6 m4">
+            <div class="col s12 l4">
               <div class="aboutMeInfo">
                 <p class="info perInfo"> Name: <span style="padding-left: 31px"> Luke Boyle </span></p>
                 <p class="info perInfo"> Age: <span style="padding-left: 45px"> 22 Years </span></p>
@@ -140,11 +143,11 @@
           <div class="row section secResume">
       
             <!-- Education -->
-            <div class="eduBox col s12 m5">
+            <div class="eduBox col m12 l5">
               <h3 class="center"> Education </h3>
       
               <div class="education card-panel">
-                <span class="arrow eduArrow"></span>
+                <span class="arrow eduArrow hide-on-med-and-down"></span>
                 <div>
                   <p class="eduInfo" style="max-height: 43.8px"><span style="padding-right: 25px"> Name: </span><span id="eduPlace"> NC State University </span></p>
                   <p class="eduInfo"><span style="padding-right: 23px"> Period: </span><span id="eduLength"> 2015-2016 </span></p>
@@ -158,7 +161,7 @@
             </div>
       
             <!-- Timeline Bar -->
-            <div class="secTime">
+            <div class="secTime hide-on-med-and-down">
               <span class="timelineBar"></span>
               <span class="dot dotSelected" id="eduState"></span>
               <span class="dot dotSelected" id="workDoby"></span>
@@ -169,11 +172,11 @@
             </div>
       
             <!-- Work -->
-            <div class="workBox col s12 m5 right">
+            <div class="workBox col m12 l5 right">
               <h3 class="center"> Work </h3>
       
               <div class="work card-panel">
-                <span class="arrow workArrow "></span>
+                <span class="arrow workArrow hide-on-med-and-down"></span>
                 <div>
                   <p class="workInfo" style="max-height: 43.8px"><span style="padding-right: 25px"> Name: </span><span id="workPlace"> Brian Doby Shell </span></p>
                   <p class="workInfo"><span style="padding-right: 23px"> Period: </span><span id="workLength"> 2017-Present </span></p>
@@ -230,6 +233,11 @@
                   <span class="tooltipText"> Gitlab </span>
                 </div>
 
+                <!-- <div class="skillBack z-depth-2">
+                  <i class="icon-heroku proSkill fontMfizz"></i>
+                  <span class="tooltipText"> Heroku </span>
+                </div> -->
+
               </div>
 
             <!-- Hobbies -->
@@ -283,8 +291,8 @@
                   <img class="portImg" src="assets/Images/starWars.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="rpg"> Star Wars RPG </div>
-                    <a class="deployed" href="https://lmboyle.github.io/unit-4-game/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
-                    <a class="code" href="https://github.com/LMBoyle/unit-4-game" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
+                    <a class="deployed" href="https://lmboyle.github.io/RPG-Game/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a class="code" href="https://github.com/LMBoyle/RPG-Game" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
       
@@ -323,8 +331,8 @@
                   <img class="portImg" src="assets/Images/sportsNow.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="sportsNow"> Sports Now </div>
-                    <a class="deployed" href="https://zhaokevinma.github.io/project1/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
-                    <a class="code" href="https://github.com/zhaokevinma/project1" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
+                    <a class="deployed" href="https://lmboyle.github.io/sportsNow" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a class="code" href="https://github.com/LMBoyle/SportsNow" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
       
@@ -350,20 +358,60 @@
                 <div class="imgContain">
                   <img class="portImg" src="assets/Images/bamazon.jpg">
                   <div class="imgButtons">
-                    <div class="imgText" id="nodeWord" style="left:-71px"> Bamazon </div>
+                    <div class="imgText" id="bamazon" style="left:-71px"> Bamazon </div>
                     <a class="code" href="https://github.com/LMBoyle/bamazon" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
 
                 <!-- Friend Finder -->
                 <div class="imgContain">
-                    <img class="portImg" src="assets/Images/friendFinder.jpg">
-                    <div class="imgButtons">
-                      <div class="imgText" id="nodeWord" style="left:-71px"> Friend Friender </div>
-                      <a class="deployed" href="https://friend-finder-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
-                      <a class="code" href="https://github.com/LMBoyle/friendFinder" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
-                    </div>
+                  <img class="portImg" src="assets/Images/friendFinder.jpg">
+                  <div class="imgButtons">
+                    <div class="imgText" id="friendFind"> Friend Finder </div>
+                    <a class="deployed" href="https://friend-finder-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a class="code" href="https://github.com/LMBoyle/friendFinder" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
+                </div>
+
+                <!-- Eat Da Burger -->
+                <div class="imgContain">
+                  <img class="portImg" src="assets/Images/eatdaburger.jpg">
+                  <div class="imgButtons">
+                    <div class="imgText" id="eatdaburger"> Eat Da Burger </div>
+                    <a class="deployed" href="https://eatdaburger-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a class="code" href="https://github.com/LMBoyle/burger" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Eat Da Burger Sequel-->
+                <div class="imgContain">
+                  <img class="portImg" src="assets/Images/eatdaburgersequel.jpg">
+                  <div class="imgButtons">
+                    <div class="imgText" id="eatdaburgersequel"> Eat Da Burger Sequel</div>
+                    <a class="deployed" href="https://eatdaburgersequel-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a class="code" href="https://github.com/LMBoyle/burgerSequel" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Death By Docs -->
+                <div class="imgContain">
+                  <img class="portImg" src="assets/Images/deathbydoc.png">
+                  <div class="imgButtons">
+                    <div class="imgText" id="newsScraper"> Death By Documents </div>
+                    <a class="deployed" href="https://github.com/LMBoyle/deathByDocuments" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a class="code" href="https://deathbydoc-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- News Scraper -->
+                <div class="imgContain">
+                  <img class="portImg" src="assets/Images/newsScraper.jpg">
+                  <div class="imgButtons">
+                    <div class="imgText" id="newsScraper"> News Scraper </div>
+                    <a class="deployed" href="https://newsscraper-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a class="code" href="https://github.com/LMBoyle/newsScraper" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
             </div>
           </div>
 

@@ -31,7 +31,7 @@ var education = [
     period: "2019",
     address: "Raleigh, North Carolina",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit massa. Etiam sed dapibus nibh, id posuere nunc. Quisque eu felis odio.",
-    arrow: "top: 336px",
+    arrow: "top: 310px",
   },
 ]
 var eduNum = 0;
