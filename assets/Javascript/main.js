@@ -344,6 +344,9 @@ $(document).ready(function () {
   // When scrolling, change the selected nav item
   $(window).scroll(changedSelected);
 
+  // On mobile screens, show sidenav
+  $('.sidenav').sidenav();
+
   // Scroll to section when nav item is clicked
   $(".nav-link").click(scrollSelected);
 

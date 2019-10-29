@@ -109,6 +109,11 @@ nav .nav-wrapper i,
   opacity: 1;
 }
 
+/* Sidebar */
+.sidenav li>a {
+  display: inline-block;
+}
+
 /* ============== Title ============== */
 #index-banner {
   background: url(../Images/background1.jpg);

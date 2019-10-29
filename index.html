@@ -27,6 +27,7 @@
         <div class="navbar-fixed">
           <nav role="navigation">
             <div class="nav-wrapper container">
+              <a href="#" data-target="mobileNav" class="sidenav-trigger" ><i class="material-icons" style="line-height: 50px;">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
     
                 <li class="nav-item">
@@ -61,8 +62,38 @@
     
               </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Side Bar -->
+        <ul class="sidenav" id="mobileNav">
+          <li class="nav-item">
+            <a class="nav-link navHome" id="selected"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navAbout"><i class="fas fa-address-card"></i>About</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+                <a class="nav-link navRes"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="dropdown-content">
+                  <a class="nav-link"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
+                  <a target="_blank" href="assets/Images/Resume.Current.pdf" style="padding:5px; font-size: 13px"><i class="fas fa-file-download"></i>Download Resume</a>
+                </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navSkill" href="#"><i class="fas fa-user-tie"></i>Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPort" href="#"><i class="fas fa-laptop-code"></i>Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navContact" href="#"><i class="fas fa-envelope-open-text"></i>Contact Me</a>
+          </li>
+        </ul>
+            
+        
     </header>
 
     <main>
@@ -468,10 +499,11 @@
     </footer>
 
   <!-- Scripts -->
-  <!-- Materialize JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- jQuery -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <!-- Javascript -->
   <script src='assets/Javascript/main.js'></script>
 
