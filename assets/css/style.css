@@ -344,10 +344,11 @@ nav .nav-wrapper i,
   height: 50px;
   line-height: 50px;
   padding: 0;
-  background: #6b6e70;
+  background: #76797a;
   border-radius: 50%;
   position: relative;
   display: inline-block;
+  margin-top: 10px;
 }
 
 .skillBack i {
@@ -430,6 +431,29 @@ nav .nav-wrapper i,
 
 .fa-cookie-bite {
   color: rgb(170, 93, 30);
+}
+
+/* font Mfizz Icons */
+#herokuIcon {
+  padding-left: 16px;
+  color: #3a2778;
+}
+
+.icon-mongodb {
+  color: #13aa52;
+}
+
+.icon-mysql-alt {
+  color: #037690;
+}
+
+.icon-jquery  {
+  color: #76cef4
+}
+
+#reactIcon {
+  padding-right: 5px;
+  color: #61dafb
 }
 
 /* ============ Portfolio ============ */
