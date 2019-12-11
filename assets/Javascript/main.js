@@ -102,7 +102,7 @@ var workNum = 0;
 // * On scroll, change selected nav item
   function changedSelected() {
     var cur_pos = $(this).scrollTop();
-    console.log(cur_pos.toFixed(2));
+    // console.log(cur_pos.toFixed(2));
 
     if (0 < cur_pos && cur_pos < 655) {
       $(".navAbout").removeAttr("id", "selected");
