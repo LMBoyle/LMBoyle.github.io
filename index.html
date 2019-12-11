@@ -481,69 +481,20 @@
               <h3> Contact Me </h3>
 
                 <div class="col s6 offset-s3 center">
-                  <form class="contact" method="post" action="./assets/scripts/contact.php" role="form">
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="form_name">Firstname *</label>
-                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                  <div class="help-block with-errors"></div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="form_lastname">Lastname *</label>
-                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                  <div class="help-block with-errors"></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="form_email">Email *</label>
-                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                  <div class="help-block with-errors"></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12">
-                              <div class="form-group">
-                                  <label for="form_message">Message *</label>
-                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                  <div class="help-block with-errors"></div>
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <input type="submit" class="btn btn-success btn-send" value="Send message">
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12">
-                              <p class="text-muted">
-                                  <strong>*</strong> These fields are required. Contact form template by
-                          </div>
-                      </div>
-                    </form>
-                  </div>
-                
-                    <!-- <label> Name </label>
-                    <input class="contactInfo" id="contactName" type="text" name="name" placeholder="John Doe"/>
-                  </form>
+                  <form class="contact" action="https://formspree.io/xkngaojw" method="POST" role="form">
+                    
+                    <label> Name </label>
+                    <input class="contactInfo" id="contactName" type="text" name="Name" placeholder="John Doe"/>
 
-                  <form class="contact">
-                      <label> Email </label>
-                      <input class="contactInfo" id="contactEmail" type="email" name="email" placeholder="YourEmail@email.com"/>
+                    <label> Email </label>
+                    <input class="contactInfo" id="contactEmail" type="email" name="_replyto" placeholder="YourEmail@email.com"/>
+
+                    <label> Message </label>
+                    <textarea class="contactInfo" id="contactMessage" name="message" placeholder="Your Message Here"></textarea>
+
+                    <input type="submit" value="Submit"/>
                   </form>
-  
-                  <form class="contact">
-                      <label> Message </label>
-                      <textarea class="contactInfo" id="contactMessage" name="message" placeholder="Your Message Here"></textarea>
-                  </form>
-  
-                  <input type="submit" value="Submit"/>
-                </div> -->
+                </div>
 
                 <!-- <div id="contactOverlay">
                   Coming Soon!
@@ -581,7 +532,6 @@
 
   <!-- Javascript -->
   <script src='assets/Javascript/main.js'></script>
-  <script src='assets/Javascript/contact.js'></script>
 
   </body>
 
