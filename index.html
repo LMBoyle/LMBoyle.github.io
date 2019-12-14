@@ -23,41 +23,41 @@
 
   <body>
     <header>
-      <!-- Nav Bar -->        
+      <!-- Nav Bar -->
         <div class="navbar-fixed">
           <nav role="navigation">
             <div class="nav-wrapper container">
               <a href="#" data-target="mobileNav" class="sidenav-trigger" ><i class="material-icons" style="line-height: 50px;">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
     
-                <li class="nav-item">
-                  <a class="nav-link navHome" id="selected"><i class="fas fa-home"></i>Home</a>
+                <li class="nav-item selected">
+                  <a class="nav-link navHome" href="#secTitle"><i class="fas fa-home"></i>Home</a>
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link navAbout"><i class="fas fa-address-card"></i>About</a>
+                  <a class="nav-link navAbout" href="#secAbout"><i class="fas fa-address-card"></i>About</a>
                 </li>
     
                 <li class="nav-item">
                   <div class="dropdown">
-                      <a class="nav-link navRes"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
+                      <a class="nav-link navRes" href="#secResume"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
                       <div class="dropdown-content">
-                        <a class="nav-link"><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
+                        <a><i class="fas fa-user-graduate"></i>Resume<i class="material-icons right">arrow_drop_down</i></a>
                         <a target="_blank" href="assets/Images/Resume.Current.pdf" style="padding:5px; font-size: 13px"><i class="fas fa-file-download"></i>Download Resume</a>
                       </div>
                   </div>
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link navSkill" href="#"><i class="fas fa-user-tie"></i>Skills</a>
+                  <a class="nav-link navSkill" href="#secSkills"><i class="fas fa-user-tie"></i>Skills</a>
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link navPort" href="#"><i class="fas fa-laptop-code"></i>Portfolio</a>
+                  <a class="nav-link navPort" href="#secPort"><i class="fas fa-laptop-code"></i>Portfolio</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link navContact" href="#"><i class="fas fa-envelope-open-text"></i>Contact Me</a>
+                  <a class="nav-link navContact" href="#secContact"><i class="fas fa-envelope-open-text"></i>Contact Me</a>
                 </li>
     
               </ul>
@@ -92,13 +92,12 @@
             <a class="nav-link navContact" href="#"><i class="fas fa-envelope-open-text"></i>Contact Me</a>
           </li>
         </ul>
-            
         
     </header>
 
     <main>
       <!-- Title -->
-        <div class="section secTitle" id="index-banner">
+        <div class="index-banner " id="secTitle">
           <div id="indexOverlay">
             <div class="container titleContain">
       
@@ -123,7 +122,7 @@
       <div class="card-panel" id="containerCard">
         
         <!-- About Me -->
-          <div class="row section secAbout">
+          <div class="row section scrollspy" id="secAbout">
             <h3 style="text-align:center"> About Me </h3>
             <!-- About Me Description -->
             <div class="col s12 l4">
@@ -168,9 +167,8 @@
             </div>
           </div>
       
-      
         <!-- Resume -->
-          <div class="row section secResume">
+          <div class="row section scrollspy" id="secResume">
       
             <!-- Education -->
             <div class="eduBox col m12 l5">
@@ -223,7 +221,7 @@
           </div>
       
         <!-- Skills -->
-          <div class="row section secSkills">
+          <div class="row section scrollspy" id="secSkills">
             <!-- Programming -->
               <div class="programming col s12 m6 center">
                 <h3> Programming Skills </h3>
@@ -322,7 +320,7 @@
           </div>
       
         <!-- Portfolio -->
-          <div class="row section secPort">
+          <div class="row section scrollspy" id="secPort">
             <div class="portfolio col s12 center">
                 <h3> Portfolio </h3>
       
@@ -476,7 +474,7 @@
           </div>
 
         <!-- Contact Me -->
-          <div class="row section secContact">
+          <div class="row section scrollspy" id="secContact">
             <div class="col s12 center">
               <h3> Contact Me </h3>
 
@@ -529,9 +527,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
   <!-- Javascript -->
-  <script src='assets/Javascript/main.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src='assets/js/ScrollSpy.js'></script>
 
   </body>
 
