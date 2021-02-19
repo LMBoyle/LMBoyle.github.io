@@ -40,7 +40,7 @@ var eduNum = 0;
 var work = [
   {
     name: "Brian Doby Shell",
-    period: "2017-Present",
+    period: "2017-2020",
     address: "Burlington, North Carolina",
     role: "Shift Manager",
     des: "Two and a half years quickly rising through the ranks to shift manager. Primarily cashier work and renting U-Hauls with minor automotive work.",
