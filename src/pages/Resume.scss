@@ -1,0 +1,134 @@
+#secResume {
+  position: relative;
+}
+
+.secTime {
+  width: 4px;
+  margin-left: -2px;
+  position: absolute;
+  left: 50%;
+  height: 215px;
+  top: 115px;
+}
+
+.timelineBar {
+  background-color: #CBCDCB;
+  opacity: .63;
+  content: '';
+  width: 4px;
+  margin-left: -2px;
+  position: absolute;
+  left: 50%;
+  height: 300px;
+  top: 20px;
+}
+
+/* Timeline Dots */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin-left: -4px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #86c232;
+  border: 1px solid #474b4f;
+}
+
+.dot:hover,
+.dotSelected {
+  background-color: #474b4f;
+  border: 1px solid #86c232;
+}
+
+#eduState {
+  top: 15px;
+}
+
+#workDoby {
+  top: 95px;
+}
+
+#eduElon {
+  top: 170px;
+}
+
+#workRec {
+  top: 220px;
+}
+
+#eduPT {
+  top: 280px;
+}
+
+#eduCode {
+  top: 315px;
+}
+
+/* Timeline Titles */
+#title {
+  color: #61892f;
+  font-weight: bolder
+}
+
+/* Timeline cards */
+.work,
+.education {
+  background-color: #6b6e70;
+  color: #CBCDCB;
+  position: relative;
+}
+
+.eduInfo,
+.workInfo {
+  font-size: 17px;
+  line-height: 43px;
+  border-bottom: 1px solid #9da1a4;
+  text-shadow: 2px 2px 3px #222629;
+  overflow: hidden;
+}
+
+#eduDes,
+#workDes {
+  border-bottom: 0;
+  font-size: 15px;
+}
+
+.arrow {
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid #6b6e70; 
+  overflow: hidden;
+  box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #999;
+  transform: rotate(45deg); /* Prefixes... */
+  top: 75px;
+  left: 25px;
+  box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+}
+
+.eduArrow {
+  right: -10px;
+  top: 6px;
+}
+
+.workArrow {
+  left: -10px;
+  top: 85px;
+  transform: rotate(0.5turn);
+}
+
+#eduLeft,
+#eduRight,
+#workLeft,
+#workRight {
+  margin-top: 10px; 
+}

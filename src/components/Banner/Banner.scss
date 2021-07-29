@@ -1,0 +1,45 @@
+.index-banner {
+  background: url(../../assets/img/background1.jpg);
+  background-size: cover;
+  height: 657px;
+  position: relative;
+  width: 100%
+}
+
+#indexOverlay {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  top: 0
+}
+
+.titleContain {
+  position: relative;
+  height: 657px;
+  color: #CBCDCB;
+}
+
+#titleInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titleName {
+  font-size: 100px;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+.titleAdj {
+  font-size: 25px;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+.titleBox {
+  border: 5px solid #61892f;
+  font-size: 46px;
+  line-height: 100px;
+  text-shadow: 4px 4px 6px #000000;
+}

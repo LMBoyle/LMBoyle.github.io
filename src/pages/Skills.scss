@@ -1,0 +1,116 @@
+.skillBack {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  background: #76797a;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.skillBack i {
+  width: inherit;
+  display: inline-block;
+  text-align: center;
+  font-size: 35px;
+  line-height: 51px;
+}
+
+/* Tooltips */
+.skillBack .tooltipText {
+  visibility: hidden;
+  width: 105px;
+  background-color: #474b4f;
+  color: #CBCDCB;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 65%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skillBack .tooltipText::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #474b4f transparent transparent transparent;
+  transform: rotate(0.5turn);
+}
+
+.skillBack:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Skills/Hobbies Colors */
+.proSkill.fa-github,
+.fa-dumbbell,
+.fa-book-reader,
+.fa-gamepad {
+  color: black;
+}
+
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3-alt {
+  color: #264de4;
+}
+
+.fa-js-square {
+  color: #f0db4f;
+}
+
+.fa-bootstrap {
+  color: #563d7c;
+}
+
+.fa-node-js {
+  color: #3c873a;
+}
+
+.fa-gitlab {
+  color: #e24329;
+}
+
+.fa-feather-alt {
+  color: white;
+}
+
+.fa-cookie-bite {
+  color: rgb(170, 93, 30);
+}
+
+/* font Mfizz Icons */
+#herokuIcon {
+  padding-left: 16px;
+  color: #3a2778;
+}
+
+.icon-mongodb {
+  color: #13aa52;
+}
+
+.icon-mysql-alt {
+  color: #037690;
+}
+
+.icon-jquery  {
+  color: #76cef4
+}
+
+#reactIcon {
+  padding-right: 5px;
+  color: #61dafb
+}
