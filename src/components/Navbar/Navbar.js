@@ -24,12 +24,12 @@ export default function Navbar() {
                 <div class='dropdown'>
                     <a class='nav-link navRes' href='#secResume'><i class='fas fa-user-graduate'></i>Resume<i class='material-icons right'>arrow_drop_down</i></a>
                     <div class='dropdown-content'>
-                      <a><i class='fas fa-user-graduate'></i>Resume<i class='material-icons right'>arrow_drop_down</i></a>
+                      <button><i class='fas fa-user-graduate'></i>Resume<i class='material-icons right'>arrow_drop_down</i></button>
                       <a target='_blank' href='assets/img/LukeBoyle_Resume.pdf' style={{padding:'5px', fontSize: '13px'}}><i class='fas fa-file-download'></i>Download Resume</a>
                     </div>
                 </div>
               </li>
-  
+
               <li class='nav-item'>
                 <a class='nav-link navSkill' href='#secSkills'><i class='fas fa-user-tie'></i>Skills</a>
               </li>

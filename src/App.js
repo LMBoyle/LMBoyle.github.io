@@ -1,13 +1,17 @@
 // IMPORT =========================================================================================
 import React from     'react';
-import Navbar from    '../sections/Navbar';
-import Banner from    '../sections/Banner'
-import About from     '../sections/About';
-import Resume from    '../sections/Resume';
-import Skills from    '../sections/Skills';
-import Projects from  '../sections/Projects';
-import Contact from   '../sections/Contact';
-import Footer from    '../sections/Footer';
+
+import About from     './pages/About';
+import Resume from    './pages/Resume';
+import Skills from    './pages/Skills';
+import Projects from  './pages/Projects';
+import Contact from   './pages/Contact';
+import Navbar from    './components/Navbar/Navbar';
+import Banner from    './components/Banner/Banner';
+import Footer from    './components/Footer/Footer';
+
+import './styles/scss/reset.scss';
+import './App.scss';
 
 // EXPORT =========================================================================================
 export default function App() {
