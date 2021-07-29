@@ -1,3 +1,7 @@
+// IMPORTS ======================================================================================== 
+@import '../styles/scss/variables';
+
+// STYLES ========================================================================================= 
 #secResume {
   position: relative;
 }
@@ -31,14 +35,14 @@
   display: block;
   position: absolute;
   border-radius: 50%;
-  background-color: #86c232;
-  border: 1px solid #474b4f;
+  background-color: $brightGreen;
+  border: 1px solid $darkGrey;
 }
 
 .dot:hover,
 .dotSelected {
-  background-color: #474b4f;
-  border: 1px solid #86c232;
+  background-color: $darkGrey;
+  border: 1px solid $brightGreen;
 }
 
 #eduState {
@@ -67,14 +71,14 @@
 
 /* Timeline Titles */
 #title {
-  color: #61892f;
+  color: $darkGreen;
   font-weight: bolder
 }
 
 /* Timeline cards */
 .work,
 .education {
-  background-color: #6b6e70;
+  background-color: $lightGrey;
   color: #CBCDCB;
   position: relative;
 }
@@ -84,7 +88,7 @@
   font-size: 17px;
   line-height: 43px;
   border-bottom: 1px solid #9da1a4;
-  text-shadow: 2px 2px 3px #222629;
+  text-shadow: 2px 2px 3px $black;
   overflow: hidden;
 }
 
@@ -98,7 +102,7 @@
   position: absolute;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 10px solid #6b6e70; 
+  border-left: 10px solid $lightGrey; 
   overflow: hidden;
   box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
 }

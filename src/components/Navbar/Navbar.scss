@@ -1,5 +1,9 @@
+// IMPORTS ======================================================================================== 
+@import '../../styles/scss/variables';
+
+// STYLES ========================================================================================= 
 nav {
-  background-color: #222629;
+  background-color: $black;
   height: 64px;
   padding: 7px;
 }
@@ -28,14 +32,14 @@ nav .nav-wrapper i,
 
 .nav-link:hover,
 .selected:hover {
-  color: #61892f;
-  background-color: #222629;
+  color: $darkGreen;
+  background-color: $black;
   box-shadow: 0px 8px 16px 0px rgba(107, 110, 112, .2);
 }
 
 .selected a:first-of-type {
   color: #CBCDCB;
-  border: 3px solid #86c232;
+  border: 3px solid $brightGreen;
   border-radius: 5px;
 }
 
@@ -46,13 +50,13 @@ nav .nav-wrapper i,
 }
 
 .dropdown:hover .nav-link {
-  color: #61892f;
+  color: $darkGreen;
 }
 
 .dropdown-content {
   display: hidden;
   position: absolute;
-  background-color: #222629;
+  background-color: $black;
   width: 100%;
   box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.2);
 }
@@ -65,7 +69,7 @@ nav .nav-wrapper i,
 }
 
 .dropdown-content a:hover {
-  color: #61892f;
+  color: $darkGreen;
 }
 
 .dropdown:hover .dropdown-content {

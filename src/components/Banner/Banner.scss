@@ -1,3 +1,7 @@
+// IMPORTS ======================================================================================== 
+@import '../../styles/scss/variables';
+
+// STYLES ========================================================================================= 
 .index-banner {
   background: url(../../assets/img/background1.jpg);
   background-size: cover;
@@ -38,7 +42,7 @@
 }
 
 .titleBox {
-  border: 5px solid #61892f;
+  border: 5px solid $darkGreen;
   font-size: 46px;
   line-height: 100px;
   text-shadow: 4px 4px 6px #000000;

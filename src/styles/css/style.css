@@ -1,9 +1,9 @@
 /* ======================================== Color Scheme  ======================================== 
-  Dark Green: #61892F 
-  Bright Green: #86C232 
-  Black: #222629 
-  Dark Grey: #474B4F 
-  Light Grey: #6B6E70 
+  Dark Green: $darkGreen 
+  Bright Green: $brightGreen 
+  Black: $black 
+  Dark Grey: $darkGrey 
+  Light Grey: $lightGrey 
  */
 /* ========================================== Repeating ========================================== */
 * {
@@ -19,13 +19,13 @@ html {
 }
 
 body {
-  background-color: #474b4f;
+  background-color: $darkGrey;
   color: #CBCDCB;
   position: relative;
 }
 
 h3 {
-  color: #86c232;
+  color: $brightGreen;
   font-weight: bolder;
   text-shadow: 1px 1px 2px #000000;
   font-size: 2.6rem;
@@ -36,15 +36,15 @@ img {
 }
 
 #containerCard {
-  background-color: #222629;
+  background-color: $black;
   margin-top: 0;
   padding-top: 0;
-  box-shadow: 0 0 8px 3px #61892f;
+  box-shadow: 0 0 8px 3px $darkGreen;
 }
 
 /* =========================================== Nav Bar =========================================== */
 nav {
-  background-color: #222629;
+  background-color: $black;
   height: 64px;
   padding: 7px;
 }
@@ -73,14 +73,14 @@ nav .nav-wrapper i,
 
 .nav-link:hover,
 .selected:hover {
-  color: #61892f;
-  background-color: #222629;
+  color: $darkGreen;
+  background-color: $black;
   box-shadow: 0px 8px 16px 0px rgba(107, 110, 112, 0.2);
 }
 
 .selected a:first-of-type {
   color: #CBCDCB;
-  border: 3px solid #86c232;
+  border: 3px solid $brightGreen;
   border-radius: 5px;
 }
 
@@ -91,13 +91,13 @@ nav .nav-wrapper i,
 }
 
 .dropdown:hover .nav-link {
-  color: #61892f;
+  color: $darkGreen;
 }
 
 .dropdown-content {
   display: hidden;
   position: absolute;
-  background-color: #222629;
+  background-color: $black;
   width: 100%;
   box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.2);
 }
@@ -110,7 +110,7 @@ nav .nav-wrapper i,
 }
 
 .dropdown-content a:hover {
-  color: #61892f;
+  color: $darkGreen;
 }
 
 .dropdown:hover .dropdown-content {
@@ -164,7 +164,7 @@ nav .nav-wrapper i,
 }
 
 .titleBox {
-  border: 5px solid #61892f;
+  border: 5px solid $darkGreen;
   font-size: 46px;
   line-height: 100px;
   text-shadow: 4px 4px 6px #000000;
@@ -172,7 +172,7 @@ nav .nav-wrapper i,
 
 /* ========================================== About Me  ========================================== */
 .btn-floating i {
-  color: #61892f;
+  color: $darkGreen;
 }
 
 .info {
@@ -238,14 +238,14 @@ nav .nav-wrapper i,
   display: block;
   position: absolute;
   border-radius: 50%;
-  background-color: #86c232;
-  border: 1px solid #474b4f;
+  background-color: $brightGreen;
+  border: 1px solid $darkGrey;
 }
 
 .dot:hover,
 .dotSelected {
-  background-color: #474b4f;
-  border: 1px solid #86c232;
+  background-color: $darkGrey;
+  border: 1px solid $brightGreen;
 }
 
 #eduState {
@@ -274,14 +274,14 @@ nav .nav-wrapper i,
 
 /* Timeline Titles */
 #title {
-  color: #61892f;
+  color: $darkGreen;
   font-weight: bolder;
 }
 
 /* Timeline cards */
 .work,
 .education {
-  background-color: #6b6e70;
+  background-color: $lightGrey;
   color: #CBCDCB;
   position: relative;
 }
@@ -291,7 +291,7 @@ nav .nav-wrapper i,
   font-size: 17px;
   line-height: 43px;
   border-bottom: 1px solid #9da1a4;
-  text-shadow: 2px 2px 3px #222629;
+  text-shadow: 2px 2px 3px $black;
   overflow: hidden;
 }
 
@@ -305,7 +305,7 @@ nav .nav-wrapper i,
   position: absolute;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 10px solid #6b6e70;
+  border-left: 10px solid $lightGrey;
   overflow: hidden;
   box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
 }
@@ -366,7 +366,7 @@ nav .nav-wrapper i,
 .skillBack .tooltipText {
   visibility: hidden;
   width: 105px;
-  background-color: #474b4f;
+  background-color: $darkGrey;
   color: #CBCDCB;
   text-align: center;
   border-radius: 6px;
@@ -387,7 +387,7 @@ nav .nav-wrapper i,
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #474b4f transparent transparent transparent;
+  border-color: $darkGrey transparent transparent transparent;
   transform: rotate(0.5turn);
 }
 
@@ -513,7 +513,7 @@ div.imgContain {
   height: 38px;
   line-height: 38px;
   padding: 0;
-  background: #6b6e70;
+  background: $lightGrey;
   border-radius: 50%;
   position: relative;
   display: inline-block;
@@ -599,18 +599,18 @@ form label {
 
 .submitBtn {
   margin: 15px 0;
-  background-color: #222629;
-  border: 1px solid #86C232;
+  background-color: $black;
+  border: 1px solid $brightGreen;
   line-height: 30px;
 }
 
 .submitBtn:hover,
 .submitBtn input:hover {
-  background-color: #86C232;
+  background-color: $brightGreen;
 }
 
 .submitBtn input {
-  background-color: #222629;
+  background-color: $black;
   border: 0;
   color: white;
 }
@@ -618,7 +618,7 @@ form label {
 /* =========================================== Footer  =========================================== */
 .page-footer,
 .footer-copyright {
-  background-color: #222629;
+  background-color: $black;
   text-align: center;
 }
 

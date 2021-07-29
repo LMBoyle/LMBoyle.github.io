@@ -1,3 +1,7 @@
+// IMPORTS ======================================================================================== 
+@import '../styles/scss/variables';
+
+// STYLES ========================================================================================= 
 #secContact {
   position: relative;
 }
@@ -56,18 +60,18 @@ form label {
 
 .submitBtn {
   margin: 15px 0;
-  background-color: #222629;
-  border: 1px solid #86C232;
+  background-color: $black;
+  border: 1px solid $brightGreen;
   line-height: 30px;
 }
 
 .submitBtn:hover,
 .submitBtn input:hover {
-  background-color: #86C232;
+  background-color: $brightGreen;
 }
 
 .submitBtn input {
-  background-color: #222629;
+  background-color: $black;
   border: 0;
   color: white
 }

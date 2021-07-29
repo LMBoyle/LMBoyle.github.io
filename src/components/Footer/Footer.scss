@@ -1,6 +1,10 @@
+// IMPORTS ======================================================================================== 
+@import '../../styles/scss/variables';
+
+// STYLES ========================================================================================= 
 .page-footer,
 .footer-copyright {
-  background-color: #222629;
+  background-color: $black;
   text-align: center;
 }
 
