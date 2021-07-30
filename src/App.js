@@ -16,24 +16,24 @@ import './App.scss';
 // EXPORT =========================================================================================
 export default function App() {
   return (
-    <div className="relative container">
+    <div className="relative">
       <header className="sticky top-0 z-50">
-        <Navbar />
+        {/* <Navbar /> */}
       </header>
 
       <main>
         <div className="card-panel" id="containerCard">
-          <Banner />
+          {/* <Banner /> */}
           <About />
-          <Resume />
-          <Skills />
-          <Projects />
-          <Contact />
+          {/* <Resume /> */}
+          {/* <Skills /> */}
+          {/* <Projects /> */}
+          {/* <Contact /> */}
         </div>
       </main>
 
       <footer>
-        <Footer />
+        {/* <Footer /> */}
       </footer>
     </div>
   );

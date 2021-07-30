@@ -1,0 +1,38 @@
+// IMPORTS ======================================================================================== 
+@import './variables';
+
+// STYLES ========================================================================================= 
+
+// Typing Animations
+.codeText {
+  overflow: hidden;
+  position: relative;
+  width: 18em;
+  border-right: 25px solid $brightGreen;
+  // font-size: 38px;
+  white-space: nowrap;
+  animation: writeText 4s steps(44) 1s 1 normal both,
+  blinkTextCursor 400ms steps(44) infinite normal;
+}
+
+@keyframes writeText {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes blinkTextCursor {
+
+  from {
+    border-right-color: $brightGreen75;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+
+}
