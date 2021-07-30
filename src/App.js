@@ -10,25 +10,31 @@ import Navbar from    './components/Navbar/Navbar';
 import Banner from    './components/Banner/Banner';
 import Footer from    './components/Footer/Footer';
 
-import './styles/scss/reset.scss';
+import 'tailwindcss/tailwind.css';
 import './App.scss';
 
 // EXPORT =========================================================================================
 export default function App() {
   return (
-    <main>
-      <Navbar />
-      <Banner />
-      <div class="container">
-        <div class="card-panel" id="containerCard">
+    <div className="relative container">
+      <header className="sticky top-0 z-50">
+        <Navbar />
+      </header>
+
+      <main>
+        <div className="card-panel" id="containerCard">
+          <Banner />
           <About />
           <Resume />
           <Skills />
           <Projects />
           <Contact />
         </div>
-      </div>
-      <Footer />
-    </main>
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }

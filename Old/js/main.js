@@ -192,55 +192,55 @@ var workNum = 0;
     switch (eduNum) {
       case (0):
         $(".eduArrow").attr("style", education[0].arrow);
-        $("#eduState").addClass("dotSelected");
-        $("#eduElon").removeClass("dotSelected");
-        $("#eduPT").removeClass("dotSelected");
-        $("#eduCode").removeClass("dotSelected");
+        $("#eduState").addclassName("dotSelected");
+        $("#eduElon").removeclassName("dotSelected");
+        $("#eduPT").removeclassName("dotSelected");
+        $("#eduCode").removeclassName("dotSelected");
         break;
       case (1):
         $(".eduArrow").attr("style", education[1].arrow);
-        $("#eduElon").addClass("dotSelected");
-        $("#eduState").removeClass("dotSelected");
-        $("#eduPT").removeClass("dotSelected");
-        $("#eduCode").removeClass("dotSelected");
+        $("#eduElon").addclassName("dotSelected");
+        $("#eduState").removeclassName("dotSelected");
+        $("#eduPT").removeclassName("dotSelected");
+        $("#eduCode").removeclassName("dotSelected");
         break;
       case (2):
         $(".eduArrow").attr("style", education[2].arrow);
-        $("#eduPT").addClass("dotSelected");
-        $("#eduState").removeClass("dotSelected");
-        $("#eduElon").removeClass("dotSelected");
-        $("#eduCode").removeClass("dotSelected");
+        $("#eduPT").addclassName("dotSelected");
+        $("#eduState").removeclassName("dotSelected");
+        $("#eduElon").removeclassName("dotSelected");
+        $("#eduCode").removeclassName("dotSelected");
         break;
       case (3):
         $(".eduArrow").attr("style", education[3].arrow)
-        $("#eduCode").addClass("dotSelected");
-        $("#eduState").removeClass("dotSelected");
-        $("#eduElon").removeClass("dotSelected");
-        $("#eduPT").removeClass("dotSelected");
+        $("#eduCode").addclassName("dotSelected");
+        $("#eduState").removeclassName("dotSelected");
+        $("#eduElon").removeclassName("dotSelected");
+        $("#eduPT").removeclassName("dotSelected");
         break;
       default:
         $(".eduArrow").attr("style", education[0].arrow);
-        $("#eduState").addClass("dotSelected");
-        $("#eduElon").removeClass("dotSelected");
-        $("#eduPT").removeClass("dotSelected");
-        $("#eduCode").removeClass("dotSelected");
+        $("#eduState").addclassName("dotSelected");
+        $("#eduElon").removeclassName("dotSelected");
+        $("#eduPT").removeclassName("dotSelected");
+        $("#eduCode").removeclassName("dotSelected");
     }
 
     switch (workNum) {
       case (0):
         $(".workArrow").attr("style", work[0].arrow);
-        $("#workDoby").addClass("dotSelected");
-        $("#workRec").removeClass("dotSelected");
+        $("#workDoby").addclassName("dotSelected");
+        $("#workRec").removeclassName("dotSelected");
         break;
       case (1):
         $(".workArrow").attr("style", work[1].arrow);
-        $("#workRec").addClass("dotSelected");
-        $("#workDoby").removeClass("dotSelected");
+        $("#workRec").addclassName("dotSelected");
+        $("#workDoby").removeclassName("dotSelected");
         break;
       default:
         $(".workArrow").attr("style", work[0].arrow);
-        $("#workDoby").addClass("dotSelected");
-        $("#workRec").removeClass("dotSelected");
+        $("#workDoby").addclassName("dotSelected");
+        $("#workRec").removeclassName("dotSelected");
     }
   }
 

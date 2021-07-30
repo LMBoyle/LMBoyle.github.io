@@ -37,9 +37,9 @@ $(window).scroll(function () {
 
   if (lastId !== id) {
     lastId = id;
-    // Set/remove active class
+    // Set/remove active className
     menuItems
-      .parent().removeClass("selected")
-      .end().filter("[href='#" + id + "']").parent().addClass("selected");
+      .parent().removeclassName("selected")
+      .end().filter("[href='#" + id + "']").parent().addclassName("selected");
   }
 });
