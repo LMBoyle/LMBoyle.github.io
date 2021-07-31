@@ -4,49 +4,69 @@
 // STYLES ========================================================================================= 
 
 // Typing Animation
-.codeText{
+.codeText {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
   height: 31px;
 
   .cursor {
-    border-bottom: solid 3px rgba(0,255,0,.75);
+    border-bottom: solid 3px transparent;
     position: absolute;
-    right: -7px;
+    right: -5px;
     width: 23px;
-    animation: animatedCursor 600ms steps(30,end) infinite;
   }
 
   // Name [Luke Boyle]
   &:nth-child(1){
     height: 51px;
-    animation: animatedTextName 2s steps(30,end) 1s 1 normal both;
+    animation: animatedTextName 3s steps(30,end) 1s 1 normal both;
+    animation-delay: 0s;
 
     .cursor {
       width: 49px;
+      animation: animatedCursor 500ms steps(30,end) 10;
+      animation-delay: 0s;
     }
   }
 
   // Title One [Technical Consultant Team Lead @ Salesforce]
   &:nth-child(2){
-    animation: animatedTextTitle1 2s steps(30,end) 1s 1 normal both;
+    animation: animatedTextTitle1 3s steps(30,end) 1s 1 normal both;
+    animation-delay: 5s;
+
+    .cursor {
+      animation: animatedCursor 500ms steps(30,end) infinite;
+      animation-delay: 5s;
+    }
   }
 
   // Title Two [Teaching Assistant @ Trilogy Education Services, a 2U, Inc. brand]
   &:nth-child(3){
     animation: animatedTextTitle2 2s steps(30,end) 1s 1 normal both;
+    animation-delay: 5s;
+
+    .cursor {
+      animation: animatedCursor 600ms steps(30,end) 3;
+      animation-delay: 5s;
+    }
   }
 
   // Title Three [Amateur Baker]
   &:nth-child(4){
     animation: animatedTextTitle3 2s steps(30,end) 1s 1 normal both;
+    animation-delay: 5s;
+
+    .cursor {
+      animation: animatedCursor 500ms steps(30,end) 3;
+      animation-delay: 5s;
+    }
   }
 }
 
 @keyframes animatedCursor{
-  from{border-bottom-color: rgba(0,255,0,.75);}
-  to{border-bottom-color: transparent;}
+  from, to{border-bottom-color: transparent}
+  50%{border-bottom-color: $brightGreen;}
 }
 
 @keyframes animatedTextName{
