@@ -5,21 +5,39 @@ import '../styles/scss/_animations.scss'
 
 // EXPORT =========================================================================================
 export default function About() {
-  return(
-    <section id='secAbout'>
-      {/* Name */}
-        <h1 className='codeText text-5xl text-center text-brightGreen font-code'> Luke Boyle </h1> 
 
-      {/* Title */}
-        <h2 className='text-lg text-center text-brightGreen font-code'> Technical Consultant Team Lead @ Salesforce </h2>
-        <p className='text-lg text-center text-brightGreen font-code'> Teaching Assistant @ Trilogy Education Services, a 2U, Inc. brand </p>
+  return(
+    <section  id='secAbout'>
+        
+      <div className='typeCode'>
+        {/* Name */}
+        <h1 className='codeText col-start-2 col-span-4 text-5xl text-brightGreen font-code'>
+          Luke Boyle
+          <div className="cursor"></div>
+        </h1>
+        {/* Title/s */}
+        <h2 className='codeText text-lg col-start-2 col-span-4 text-brightGreen font-code'>
+          Technical Consultant Team Lead @ Salesforce
+          <div className="cursor"></div>
+        </h2>
+        <p className='codeText text-lg col-start-2 col-span-4 text-brightGreen font-code'>
+          Teaching Assistant @ Trilogy Education Services, a 2U, Inc. brand
+          <div className="cursor"></div>
+        </p>
+        
         {/* <h2> Freelance developer and UI/UX/Design </h2> */}
-        <p className='text-lg text-center text-brightGreen font-code'> Amateur Baker </p>
+        <p className='codeText text-lg col-start-2 col-span-4 text-brightGreen font-code'>
+          Amateur Baker
+          <div className="cursor"></div>
+        </p>
+      </div>
+     
+      <br/>
 
       {/* About */}
-        <p className='text-s text-center text-brightGreen font-code'>
-          Full-stack developer with a lifelong passion for technology. After exploring different paths, came across a coding bootcamp and jumped at the chance to take it. Quickly fell in love with the process of writing code and learning how it works. Always exploring new technologies and expanding my knowledge.
-        </p>
+      <p className='text-s col-start-2 col-span-4 text-brightGreen font-code'>
+        Full-stack developer with a lifelong passion for technology. After exploring different paths, came across a coding bootcamp and jumped at the chance to take it. Quickly fell in love with the process of writing code and learning how it works. Always exploring new technologies and expanding my knowledge.
+      </p>
 
       {/* Links */}
 

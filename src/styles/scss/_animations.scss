@@ -3,36 +3,68 @@
 
 // STYLES ========================================================================================= 
 
-// Typing Animations
-.codeText {
+// Typing Animation
+.codeText{
   overflow: hidden;
-  position: relative;
-  width: 18em;
-  border-right: 25px solid $brightGreen;
-  // font-size: 38px;
   white-space: nowrap;
-  animation: writeText 4s steps(44) 1s 1 normal both,
-  blinkTextCursor 400ms steps(44) infinite normal;
+  position: relative;
+  height: 31px;
+
+  .cursor {
+    border-bottom: solid 3px rgba(0,255,0,.75);
+    position: absolute;
+    right: -7px;
+    width: 23px;
+    animation: animatedCursor 600ms steps(30,end) infinite;
+  }
+
+  // Name [Luke Boyle]
+  &:nth-child(1){
+    height: 51px;
+    animation: animatedTextName 2s steps(30,end) 1s 1 normal both;
+
+    .cursor {
+      width: 49px;
+    }
+  }
+
+  // Title One [Technical Consultant Team Lead @ Salesforce]
+  &:nth-child(2){
+    animation: animatedTextTitle1 2s steps(30,end) 1s 1 normal both;
+  }
+
+  // Title Two [Teaching Assistant @ Trilogy Education Services, a 2U, Inc. brand]
+  &:nth-child(3){
+    animation: animatedTextTitle2 2s steps(30,end) 1s 1 normal both;
+  }
+
+  // Title Three [Amateur Baker]
+  &:nth-child(4){
+    animation: animatedTextTitle3 2s steps(30,end) 1s 1 normal both;
+  }
 }
 
-@keyframes writeText {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 18em;
-  }
+@keyframes animatedCursor{
+  from{border-bottom-color: rgba(0,255,0,.75);}
+  to{border-bottom-color: transparent;}
 }
 
-@keyframes blinkTextCursor {
+@keyframes animatedTextName{
+  from{width: 0;}
+  to{width: 522px;}
+}
 
-  from {
-    border-right-color: $brightGreen75;
-  }
+@keyframes animatedTextTitle1{
+  from{width: 0;}
+  to{width: 790px;}
+}
 
-  to {
-    border-right-color: transparent;
-  }
+@keyframes animatedTextTitle2{
+  from{width: 0;}
+  to{width: 1186px;}
+}
 
+@keyframes animatedTextTitle3{
+  from{width: 0;}
+  to{width: 250px;}
 }
