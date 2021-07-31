@@ -13,9 +13,6 @@ module.exports = {
       'darkGrey': '#474B4F',
       'lightGrey': '#6B6E70',
     },
-    boxShadow: {
-      'test': '0px 8px 16px 0px rgba(107, 110, 112, .2)'
-    },
     fontFamily: {
       'code': ['"Press Start 2P"', 'cursive']
     },

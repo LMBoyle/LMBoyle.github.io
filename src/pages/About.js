@@ -1,6 +1,5 @@
 // IMPORT =========================================================================================
 import React          from 'react';
-import { Transition } from "@headlessui/react";
 import {Link}         from 'react-scroll';
 import                     './About.scss';
 import                     '../styles/scss/_animations.scss'
@@ -9,7 +8,7 @@ import                     '../styles/scss/_animations.scss'
 export default function About() {
 
   return(
-    <section className='grid grid-cols-6 gap-4' id='secAbout'>
+    <section className='grid grid-cols-6 gap-4 h-screen content-center' id='secAbout'>
       
       {/* Name and Titles */}
       <div className='typeCode col-start-2 col-span-4 text-brightGreen font-code'>
@@ -36,8 +35,6 @@ export default function About() {
           <div className="cursor"></div>
         </p>
       </div>
-     
-      <br/>
 
       {/* Description and Nav Links */}
       <div className='revealCode col-start-2 col-span-4 text-brightGreen font-code'>
@@ -46,23 +43,13 @@ export default function About() {
           Full-stack developer with a lifelong passion for technology. After exploring different paths, came across a coding bootcamp and jumped at the chance to take it. Quickly fell in love with the process of writing code and learning how it works. Always exploring new technologies and expanding my knowledge.
         </p>
         {/* Links */}
-        <div className='grid grid-cols-6 gap-4'>
-          {/* About */}
-          <Link
-            to="secAbout" 
-            spy={true} 
-            smooth={true}
-            className="col-start-2 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
-          >
-            About
-          </Link>
-
+        <div className='grid grid-cols-6 gap-4 mt-4'>
           {/* Resume */}
           <Link
             to="secResume" 
             spy={true} 
             smooth={true}
-            className="col-start-4 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+            className="col-start-2 col-span-2 inline-flex items-center hover:bg-brightGreen hover:text-black px-3 py-2 text-sm"
           >
             Resume
           </Link>
@@ -72,7 +59,7 @@ export default function About() {
             to="secSkills" 
             spy={true} 
             smooth={true}
-            className="col-start-2 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+            className="col-start-4 col-span-2 inline-flex items-center hover:bg-brightGreen hover:text-black px-3 py-2 text-sm"
           >
             Skills
           </Link>
@@ -82,7 +69,7 @@ export default function About() {
             to="secPortfolio" 
             spy={true} 
             smooth={true}
-            className="col-start-4 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+            className="col-start-2 col-span-2 inline-flex items-center hover:bg-brightGreen hover:text-black px-3 py-2 text-sm"
           >
             Portfolio
           </Link>
@@ -93,7 +80,7 @@ export default function About() {
             to="secContact" 
             spy={true} 
             smooth={true}
-            className="col-start-2 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+            className="col-start-4 col-span-2 inline-flex items-center hover:bg-brightGreen hover:text-black px-3 py-2 text-sm"
           >
             Contact
           </Link>

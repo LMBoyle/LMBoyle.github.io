@@ -22,7 +22,7 @@ export default function App() {
       </header>
 
       <main>
-        <div className="card-panel" id="containerCard">
+        <div className="mt-8">
           {/* <Banner /> */}
           <About />
           {/* <Resume /> */}
