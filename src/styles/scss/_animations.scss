@@ -3,88 +3,94 @@
 
 // STYLES ========================================================================================= 
 
-// Typing Animation
-.codeText {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  height: 31px;
+/* #region Typing Animation*/
 
-  .cursor {
-    border-bottom: solid 3px transparent;
-    position: absolute;
-    right: -5px;
-    width: 23px;
-  }
-
-  // Name [Luke Boyle]
-  &:nth-child(1){
-    height: 51px;
-    animation: animatedTextName 3s steps(30,end) 1s 1 normal both;
-    animation-delay: 0s;
+  .codeText {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 24px;
 
     .cursor {
-      width: 49px;
-      animation: animatedCursor 500ms steps(30,end) 10;
+      border-bottom: solid 3px transparent;
+      position: absolute;
+      right: -5px;
+      width: 17px;
+      animation: animatedCursor 500ms steps(30,end) 11;
+      animation-delay: 5s;
+    }
+
+    // Name [Luke Boyle]
+    &:nth-child(1){
+      height: 51px;
+      animation: animatedTextName 3s steps(30,end) 1s 1 normal both;
       animation-delay: 0s;
+
+      .cursor {
+        width: 49px;
+        animation: animatedCursor 500ms steps(30,end) 10;
+        animation-delay: 0s;
+      }
     }
-  }
 
-  // Title One [Technical Consultant Team Lead @ Salesforce]
-  &:nth-child(2){
-    animation: animatedTextTitle1 3s steps(30,end) 1s 1 normal both;
-    animation-delay: 5s;
+    // Title One [Technical Consultant Team Lead @ Salesforce]
+    &:nth-child(2){
+      animation: animatedTextTitle1 3s steps(30,end) 1s 1 normal both;
+      animation-delay: 5s;
+    }
 
-    .cursor {
-      animation: animatedCursor 500ms steps(30,end) infinite;
+    // Title Two [Teaching Assistant @ Trilogy Education Services]
+    &:nth-child(3){
+      animation: animatedTextTitle2 2s steps(30,end) 1s 1 normal both;
+      animation-delay: 5s;
+    }
+
+    // Title Three [Amateur Baker]
+    &:nth-child(4){
+      animation: animatedTextTitle3 2s steps(30,end) 1s 1 normal both;
       animation-delay: 5s;
     }
   }
 
-  // Title Two [Teaching Assistant @ Trilogy Education Services, a 2U, Inc. brand]
-  &:nth-child(3){
-    animation: animatedTextTitle2 2s steps(30,end) 1s 1 normal both;
-    animation-delay: 5s;
-
-    .cursor {
-      animation: animatedCursor 600ms steps(30,end) 3;
-      animation-delay: 5s;
-    }
+  @keyframes animatedCursor{
+    from, to{border-bottom-color: transparent}
+    50%{border-bottom-color: $brightGreen;}
   }
 
-  // Title Three [Amateur Baker]
-  &:nth-child(4){
-    animation: animatedTextTitle3 2s steps(30,end) 1s 1 normal both;
-    animation-delay: 5s;
-
-    .cursor {
-      animation: animatedCursor 500ms steps(30,end) 3;
-      animation-delay: 5s;
-    }
+  @keyframes animatedTextName{
+    from{width: 0;}
+    to{width: 522px;}
   }
-}
 
-@keyframes animatedCursor{
-  from, to{border-bottom-color: transparent}
-  50%{border-bottom-color: $brightGreen;}
-}
+  @keyframes animatedTextTitle1{
+    from{width: 0;}
+    to{width: 614px;}
+  }
 
-@keyframes animatedTextName{
-  from{width: 0;}
-  to{width: 522px;}
-}
+  @keyframes animatedTextTitle2{
+    from{width: 0;}
+    to{width: 670px;}
+  }
 
-@keyframes animatedTextTitle1{
-  from{width: 0;}
-  to{width: 790px;}
-}
+  @keyframes animatedTextTitle3{
+    from{width: 0;}
+    to{width: 194px;}
+  }
 
-@keyframes animatedTextTitle2{
-  from{width: 0;}
-  to{width: 1186px;}
-}
+/* #endregion*/
 
-@keyframes animatedTextTitle3{
-  from{width: 0;}
-  to{width: 250px;}
-}
+/* #region Reveal Animation*/
+  .revealCode {
+    height: 0;
+    overflow: hidden;
+    animation: animatedTextReveal 3s steps(30,end) 1s 1 normal both;
+    animation-delay: 10s;
+  }
+  
+  @keyframes animatedTextReveal {
+    from{height: 0;}
+    to{height: 100%;}
+  }
+
+
+/* #endregion */

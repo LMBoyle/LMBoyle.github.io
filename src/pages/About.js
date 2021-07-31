@@ -1,32 +1,37 @@
 // IMPORT =========================================================================================
-import React from 'react';
-import './About.scss';
-import '../styles/scss/_animations.scss'
+import React          from 'react';
+import { Transition } from "@headlessui/react";
+import {Link}         from 'react-scroll';
+import                     './About.scss';
+import                     '../styles/scss/_animations.scss'
 
 // EXPORT =========================================================================================
 export default function About() {
 
   return(
-    <section  id='secAbout'>
-        
-      <div className='typeCode'>
+    <section className='grid grid-cols-6 gap-4' id='secAbout'>
+      
+      {/* Name and Titles */}
+      <div className='typeCode col-start-2 col-span-4 text-brightGreen font-code'>
         {/* Name */}
-        <h1 className='codeText col-start-2 col-span-4 text-5xl text-brightGreen font-code'>
+        <h1 className='codeText text-5xl'>
           Luke Boyle
           <div className="cursor"></div>
         </h1>
         {/* Title/s */}
-        <h2 className='codeText text-lg col-start-2 col-span-4 text-brightGreen font-code'>
+        <h2 className='codeText text-sm'>
           Technical Consultant Team Lead @ Salesforce
           <div className="cursor"></div>
         </h2>
-        <p className='codeText text-lg col-start-2 col-span-4 text-brightGreen font-code'>
-          Teaching Assistant @ Trilogy Education Services, a 2U, Inc. brand
+        <p className='codeText text-sm'>
+          Teaching Assistant @ Trilogy Education Services
           <div className="cursor"></div>
         </p>
-        
-        {/* <h2> Freelance developer and UI/UX/Design </h2> */}
-        <p className='codeText text-lg col-start-2 col-span-4 text-brightGreen font-code'>
+        {/* <p className='codeText text-sm'>
+          Freelance developer and UI/UX/Designer
+          <div className="cursor"></div>
+        </p> */}
+        <p className='codeText text-sm'>
           Amateur Baker
           <div className="cursor"></div>
         </p>
@@ -34,12 +39,67 @@ export default function About() {
      
       <br/>
 
-      {/* About */}
-      <p className='text-s col-start-2 col-span-4 text-brightGreen font-code'>
-        Full-stack developer with a lifelong passion for technology. After exploring different paths, came across a coding bootcamp and jumped at the chance to take it. Quickly fell in love with the process of writing code and learning how it works. Always exploring new technologies and expanding my knowledge.
-      </p>
+      {/* Description and Nav Links */}
+      <div className='revealCode col-start-2 col-span-4 text-brightGreen font-code'>
+        {/* About */}
+        <p className='text-xs'>
+          Full-stack developer with a lifelong passion for technology. After exploring different paths, came across a coding bootcamp and jumped at the chance to take it. Quickly fell in love with the process of writing code and learning how it works. Always exploring new technologies and expanding my knowledge.
+        </p>
+        {/* Links */}
+        <div className='grid grid-cols-6 gap-4'>
+          {/* About */}
+          <Link
+            to="secAbout" 
+            spy={true} 
+            smooth={true}
+            className="col-start-2 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+          >
+            About
+          </Link>
 
-      {/* Links */}
+          {/* Resume */}
+          <Link
+            to="secResume" 
+            spy={true} 
+            smooth={true}
+            className="col-start-4 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+          >
+            Resume
+          </Link>
+
+          {/* Skills */}
+          <Link
+            to="secSkills" 
+            spy={true} 
+            smooth={true}
+            className="col-start-2 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+          >
+            Skills
+          </Link>
+
+          {/* Portfolio */}
+          <Link
+            to="secPortfolio" 
+            spy={true} 
+            smooth={true}
+            className="col-start-4 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+          >
+            Portfolio
+          </Link>
+
+          {/* Contact */}
+          <Link
+            activeClass="active" 
+            to="secContact" 
+            spy={true} 
+            smooth={true}
+            className="col-start-2 col-span-2 inline-flex items-center hover:shadow-test px-3 py-2 text-sm"
+          >
+            Contact
+          </Link>
+
+        </div> 
+      </div>
 
     </section>
   )
