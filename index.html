@@ -22,6 +22,7 @@
   </head>
 
   <body>
+
     <header>
       <!-- Nav Bar -->
         <div class="navbar-fixed">
@@ -96,6 +97,20 @@
     </header>
 
     <main>
+    <!-- Model -->
+    <section class="modal hidden">
+      <div id="modalCloseBtn">
+        <a class="btnClose" href="#" onclick=closeModal()>&times;</a>
+      </div>
+      <div id="modalBody">
+        <p> This project was previously hosted on Heroku. </p> 
+        <p> In the process of migrating to a new host. </p>
+        <p> Come back soon! </p>
+      </div>
+    </section>
+
+    <div class="hidden" id="modalOverlay" onclick=closeModal()></div>
+
       <!-- Title -->
         <div class="index-banner " id="secTitle">
           <div id="indexOverlay">
@@ -320,20 +335,10 @@
       
         <!-- Portfolio -->
           <div class="row section scrollspy" id="secPort">
+                            
             <div class="portfolio col s12 center">
                 <h3> Portfolio </h3>
-      
-                <!-- Model -->
-                <div id="myModal" class="modal">
 
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
-                  </div>
-                
-                </div>
-                
                 <!-- Word Guess Game -->
                 <div class="imgContain">
                   <img class="portImg" src="assets/img/wordGuess.jpg">
@@ -426,7 +431,8 @@
                   <img class="portImg" src="assets/img/friendFinder.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="friendFind"> Friend Finder </div>
-                    <a class="deployed" href="https://friend-finder-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <button class="deployed" onclick=openModal()><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></button>
+                    <!-- <a class="deployed" href="https://friend-finder-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
                     <a class="code" href="https://github.com/LMBoyle/friendFinder" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
@@ -436,7 +442,8 @@
                   <img class="portImg" src="assets/img/eatdaburger.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="eatdaburger"> Eat Da Burger </div>
-                    <a class="deployed" href="https://eatdaburger-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <button class="deployed" onclick=openModal()><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></button>
+                    <!-- <a class="deployed" href="https://eatdaburger-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
                     <a class="code" href="https://github.com/LMBoyle/burger" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
@@ -446,7 +453,8 @@
                   <img class="portImg" src="assets/img/eatdaburgersequel.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="eatdaburgersequel"> Eat Da Burger Sequel</div>
-                    <a class="deployed" href="https://eatdaburgersequel-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <button class="deployed" onclick=openModal()><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></button>
+                    <!-- <a class="deployed" href="https://eatdaburgersequel-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
                     <a class="code" href="https://github.com/LMBoyle/burgerSequel" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
@@ -456,7 +464,8 @@
                   <img class="portImg" src="assets/img/deathbydoc.png">
                   <div class="imgButtons">
                     <div class="imgText" id="newsScraper"> Death By Documents </div>
-                    <a class="deployed" href="https://deathbydoc-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <button class="deployed" onclick=openModal()><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></button>
+                    <!-- <a class="deployed" href="https://deathbydoc-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
                     <a class="code" href="https://github.com/LMBoyle/deathByDocuments" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
@@ -466,7 +475,8 @@
                   <img class="portImg" src="assets/img/newsScraper.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="newsScraper"> News Scraper </div>
-                    <a class="deployed" href="https://newsscraper-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <button class="deployed" onclick=openModal()><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></button>
+                    <!-- <a class="deployed" href="https://newsscraper-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
                     <a class="code" href="https://github.com/LMBoyle/newsScraper" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
@@ -486,7 +496,8 @@
                   <img class="portImg" src="assets/img/googleBooks.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="googleBooks"> Google Books </div>
-                    <a class="deployed" href="https://googlebookssearch-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <button class="deployed" onclick=openModal()><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></button>
+                    <!-- <a class="deployed" href="https://googlebookssearch-lmb.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
                     <a class="code" href="https://github.com/LMBoyle/googleBooksSearch" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>
@@ -496,7 +507,8 @@
                   <img class="portImg" src="assets/img/cheapo.jpg">
                   <div class="imgButtons">
                     <div class="imgText" id="cheapo"> Cheapo </div>
-                    <a class="deployed" href="https://cheapo-lmk.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <button class="deployed" onclick=openModal()><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></button>
+                    <!-- <a class="deployed" href="https://cheapo-lmk.herokuapp.com/" target="_blank"><div class="imgIcons"><i class="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
                     <a class="code" href="https://github.com/LMBoyle/cheapo" target="_blank"><div class="imgIcons"><i class="fas fa-code" data-tooltip="Code"></i></div></a>
                   </div>
                 </div>

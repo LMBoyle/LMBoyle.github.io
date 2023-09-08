@@ -6,10 +6,9 @@
   var text = $('#text');
 
   // Get the modal
-  var modal = document.getElementById("myModal");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+  const modal = document.querySelector(".modal");
+  // Get the overlay
+  const overlay = document.querySelector("#modalOverlay");
 
 
   var education = [
@@ -251,15 +250,15 @@
     }
   }
 
-  function openModel() {
-    modal.style.display = "block";
+  function openModal() {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   }
 
-  function closeModel() {
-    modal.style.display = "none";
+  function closeModal() {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
   }
-
-
 
 // CALLBACK =======================================================================================
 
@@ -273,10 +272,3 @@
     // On dot select
     $(".dot").click(chooseDot);
   })
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
