@@ -1,61 +1,68 @@
 // VARS ===========================================================================================
 
-var sections = $('.section');
-var nav = $('header');
-var nav_height = nav.outerHeight();
-var text = $('#text');
+  var sections = $('.section');
+  var nav = $('header');
+  var nav_height = nav.outerHeight();
+  var text = $('#text');
 
-var education = [
-  {
-    name: "NC State University",
-    period: "2015-2016",
-    address: "Raleigh, North Carolina",
-    des: " Spent one year at NC State University, starting towards Technology, Engineering, and Design Education major.",
-    arrow: "top: 6px",
-  },
-  {
-    name: "Elon University",
-    period: "2017-2018",
-    address: "Elon, North Carolina",
-    des: "Spent a semester at Elon University, working towards a business and a exercise science degree.",
-    arrow: "top: 161px",
-  },
-  {
-    name: "Nat'l Acad of Sports Medicine",
-    period: "2018",
-    address: "Burlington, North Carolina",
-    des: "Online certification course to become a personal trainer. After years of loving going to the gym, wanted to help others reach their fitness goals.",
-    arrow: "top: 270px",
-  },
-  {
-    name: "The Coding Boot Camp at UNC-Chapel Hill",
-    period: "2019",
-    address: "Raleigh, North Carolina",
-    des: "Six month certification course for full stack web development. Technology has always come easy and been a passion of mine, this course allowed for further learning.",
-    arrow: "top: 310px",
-  },
-]
-var eduNum = 0;
+  // Get the modal
+  var modal = document.getElementById("myModal");
 
-var work = [
-  {
-    name: "Brian Doby Shell",
-    period: "2017-2020",
-    address: "Burlington, North Carolina",
-    role: "Shift Manager",
-    des: "Two and a half years quickly rising through the ranks to shift manager. Primarily cashier work and renting U-Hauls with minor automotive work.",
-    arrow: "top: 85px",
-  },
-  {
-    name: "Elon University Campus Recreation",
-    period: "2017-2018",
-    address: "Elon, North Carolina",
-    role: "Koury Operations Assistant",
-    des: "Front desk sign in and watching over patrons on the gym floor during my time at Elon University.",
-    arrow: "top: 211px"
-  },
-]
-var workNum = 0;
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+
+  var education = [
+    {
+      name: "NC State University",
+      period: "2015-2016",
+      address: "Raleigh, North Carolina",
+      des: " Spent one year at NC State University, starting towards Technology, Engineering, and Design Education major.",
+      arrow: "top: 6px",
+    },
+    {
+      name: "Elon University",
+      period: "2017-2018",
+      address: "Elon, North Carolina",
+      des: "Spent a semester at Elon University, working towards a business and a exercise science degree.",
+      arrow: "top: 161px",
+    },
+    {
+      name: "Nat'l Acad of Sports Medicine",
+      period: "2018",
+      address: "Burlington, North Carolina",
+      des: "Online certification course to become a personal trainer. After years of loving going to the gym, wanted to help others reach their fitness goals.",
+      arrow: "top: 270px",
+    },
+    {
+      name: "The Coding Boot Camp at UNC-Chapel Hill",
+      period: "2019",
+      address: "Raleigh, North Carolina",
+      des: "Six month certification course for full stack web development. Technology has always come easy and been a passion of mine, this course allowed for further learning.",
+      arrow: "top: 310px",
+    },
+  ]
+  var eduNum = 0;
+
+  var work = [
+    {
+      name: "Brian Doby Shell",
+      period: "2017-2020",
+      address: "Burlington, North Carolina",
+      role: "Shift Manager",
+      des: "Two and a half years quickly rising through the ranks to shift manager. Primarily cashier work and renting U-Hauls with minor automotive work.",
+      arrow: "top: 85px",
+    },
+    {
+      name: "Elon University Campus Recreation",
+      period: "2017-2018",
+      address: "Elon, North Carolina",
+      role: "Koury Operations Assistant",
+      des: "Front desk sign in and watching over patrons on the gym floor during my time at Elon University.",
+      arrow: "top: 211px"
+    },
+  ]
+  var workNum = 0;
 
 // FUNCTIONS ======================================================================================
 
@@ -244,15 +251,32 @@ var workNum = 0;
     }
   }
 
+  function openModel() {
+    modal.style.display = "block";
+  }
+
+  function closeModel() {
+    modal.style.display = "none";
+  }
+
+
+
 // CALLBACK =======================================================================================
 
-$(document).ready(function () {
-  // On mobile screens, show sidenav
-  $('.sidenav').sidenav();
+  $(document).ready(function () {
+    // On mobile screens, show sidenav
+    $('.sidenav').sidenav();
 
-  // On resume card button clicks
-  $(".resBtn").click(resumeCycle);
+    // On resume card button clicks
+    $(".resBtn").click(resumeCycle);
 
-  // On dot select
-  $(".dot").click(chooseDot);
-})
+    // On dot select
+    $(".dot").click(chooseDot);
+  })
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }

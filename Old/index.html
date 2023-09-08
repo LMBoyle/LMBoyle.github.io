@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+    <title> Luke Boyle Portfolio </title>
+
+    <!-- CSS -->
+    <!-- Reset CSS -->
+    <link rel='stylesheet' href='assets/css/reset.css'>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/db6e28a860.js"></script>
+    <!-- Font Mfixx Icons -->
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
+    <!-- CSS -->
+    <link rel='stylesheet' href='assets/css/style.css'>
+  </head>
+
+  <body>
+    <header>
+      <!-- Nav Bar -->
+        <div className="navbar-fixed">
+          <nav role="navigation">
+            <div className="nav-wrapper container">
+              <a href='https://lmboyle.github.io/' data-target="mobileNav" className="sidenav-trigger" ><i className="material-icons" style="line-height: 50px;">menu</i></a>
+              <ul id="nav-mobile" className="right hide-on-med-and-down">
+    
+                <li className="nav-item selected">
+                  <a className="nav-link navHome" href="#secTitle"><i className="fas fa-home"></i>Home</a>
+                </li>
+    
+                <li className="nav-item">
+                  <a className="nav-link navAbout" href="#secAbout"><i className="fas fa-address-card"></i>About</a>
+                </li>
+    
+                <li className="nav-item">
+                  <div className="dropdown">
+                      <a className="nav-link navRes" href="#secResume"><i className="fas fa-user-graduate"></i>Resume<i className="material-icons right">arrow_drop_down</i></a>
+                      <div className="dropdown-content">
+                        <a><i className="fas fa-user-graduate"></i>Resume<i className="material-icons right">arrow_drop_down</i></a>
+                        <a target="_blank" href="assets/img/LukeBoyle_Resume.pdf" style="padding:5px; font-size: 13px"><i className="fas fa-file-download"></i>Download Resume</a>
+                      </div>
+                  </div>
+                </li>
+    
+                <li className="nav-item">
+                  <a className="nav-link navSkill" href="#secSkills"><i className="fas fa-user-tie"></i>Skills</a>
+                </li>
+    
+                <li className="nav-item">
+                  <a className="nav-link navPort" href="#secPort"><i className="fas fa-laptop-code"></i>Portfolio</a>
+                </li>
+
+                <li className="nav-item">
+                  <a className="nav-link navContact" href="#secContact"><i className="fas fa-envelope-open-text"></i>Contact Me</a>
+                </li>
+    
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Side Bar -->
+        <ul className="sidenav" id="mobileNav">
+          <li className="nav-item">
+            <a className="nav-link navHome" id="selected"><i className="fas fa-home"></i>Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link navAbout"><i className="fas fa-address-card"></i>About</a>
+          </li>
+          <li className="nav-item">
+            <div className="dropdown">
+                <a className="nav-link navRes"><i className="fas fa-user-graduate"></i>Resume<i className="material-icons right">arrow_drop_down</i></a>
+                <div className="dropdown-content">
+                  <a className="nav-link"><i className="fas fa-user-graduate"></i>Resume<i className="material-icons right">arrow_drop_down</i></a>
+                  <a target="_blank" href="assets/img/LukeBoyle_Resume.pdf" style="padding:5px; font-size: 13px"><i className="fas fa-file-download"></i>Download Resume</a>
+                </div>
+            </div>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link navSkill" href='https://lmboyle.github.io/'><i className="fas fa-user-tie"></i>Skills</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link navPort" href='https://lmboyle.github.io/'><i className="fas fa-laptop-code"></i>Portfolio</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link navContact" href='https://lmboyle.github.io/'><i className="fas fa-envelope-open-text"></i>Contact Me</a>
+          </li>
+        </ul>
+        
+    </header>
+
+    <main>
+      <!-- Title -->
+        <div className="index-banner " id="secTitle">
+          <div id="indexOverlay">
+            <div className="container titleContain">
+      
+              <div id="titleInfo">
+                <h1 className="titleName header center col s12"> Luke Boyle </h1>
+        
+                <div className="row center">
+                  <p className="titleAdj header col s12"> Creative - Professional - Passionate </p>
+                </div>
+        
+                <div className="row center">
+                  <div className="titleBox col s12"> Full Stack Developer </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+    
+      <!-- Container -->
+      <div className="container">
+      <div className="card-panel" id="containerCard">
+        
+        <!-- About Me -->
+          <div className="row section scrollspy" id="secAbout">
+            <h3 style="text-align:center"> About Me </h3>
+            <!-- About Me Description -->
+            <div className="col s12 l4">
+              <div className="aboutMeDes">
+                <p className="info"> 
+                  Full-stack developer with a lifelong passion for technology. After exploring different paths, came across a coding bootcamp and jumped at the chance to take it. Quickly fell in love with the process of writing code and learning how it works. Currently working on small projects here and there while looking for employment. (If you call me in for an interview, I can bribe you with cookies!)
+                </p>
+              </div>
+            </div>
+    
+            <!-- About Me Photo -->
+            <div className="col s12 l4">
+              <div className="aboutMeImg center">
+                <img className="headshot" src="assets/img/headshotWhiteBlack.png">
+              </div>
+            </div>
+    
+            <!-- About Me Personal Info -->
+            <div className="col s12 l4">
+              <div className="aboutMeInfo">
+                <p className="info perInfo"> Name: <span style="padding-left: 31px"> Luke Boyle </span></p>
+                <p className="info perInfo"> Phone: <span style="padding-left: 29px"> (336) 380-7229 </span></p>
+                <p className="info perInfo"> Email: <span style="padding-left: 37px"> boylelukem@gmail.com </span></p>
+                <p className="info perInfo"> Address: <span style="padding-left: 20px"> Burlington, North Carolina </span></p>
+              </div>
+    
+              <div className="aboutMeSocial">
+                <ul>
+                  <li>
+                    <!-- linkedIn -->
+                    <a href="https://www.linkedin.com/in/lukemboyle" className="btn-floating waves-effect waves-light white">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <!-- Github -->
+                    <a href="https://github.com/LMBoyle" className="btn-floating waves-effect waves-light white">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+        <!-- Resume -->
+          <div className="row section scrollspy" id="secResume">
+      
+            <!-- Education -->
+            <div className="eduBox col m12 l5">
+              <h3 className="center"> Education </h3>
+      
+              <div className="education card-panel">
+                <span className="arrow eduArrow hide-on-med-and-down"></span>
+                <div>
+                  <p className="eduInfo" style="max-height: 43.8px"><span className="hide-on-med-and-down" style="padding-right: 25px"> Name: </span><span id="eduPlace"> NC State University </span></p>
+                  <p className="eduInfo"><span className="hide-on-med-and-down" style="padding-right: 23px"> Period: </span><span id="eduLength"> 2015-2016 </span></p>
+                  <p className="eduInfo"><span className="hide-on-med-and-down" style="padding-right: 12px"> Address: </span><span id="eduCity"> Raleigh, North Carolina </span></p>
+                  <p className="eduInfo" id="eduDes">
+                    Spent one year at NC State University, starting towards Technology, Engineering, and Design Education major.
+                  </p>
+                  <a className="waves-light white btn-floating btn-small resBtn" id="eduLeft"><i className="material-icons">chevron_left</i></a>
+                  <a className="waves-light white btn-floating btn-small resBtn" id="eduRight"><i className="material-icons">chevron_right</i></a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Timeline Bar -->
+            <div className="secTime hide-on-med-and-down">
+              <span className="timelineBar"></span>
+              <span className="dot dotSelected" id="eduState"></span>
+              <span className="dot dotSelected" id="workDoby"></span>
+              <span className="dot" id="eduElon"></span>
+              <span className="dot" id="workRec"></span>
+              <span className="dot" id="eduPT"></span>
+              <span className="dot" id="eduCode"></span>
+            </div>
+      
+            <!-- Work -->
+            <div className="workBox col m12 l5 right">
+              <h3 className="center"> Work </h3>
+      
+              <div className="work card-panel">
+                <span className="arrow workArrow hide-on-med-and-down"></span>
+                <div>
+                  <p className="workInfo" style="max-height: 43.8px"><span className="hide-on-med-and-down" style="padding-right: 25px"> Name: </span><span id="workPlace"> Brian Doby Shell </span></p>
+                  <p className="workInfo"><span className="hide-on-med-and-down" style="padding-right: 23px"> Period: </span><span id="workLength"> 2017-2020 </span></p>
+                  <p className="workInfo"><span className="hide-on-med-and-down" style="padding-right: 12px"> Address: </span><span id="workCity"> Burlington, North Carolina </span></p>
+                  <p className="workInfo"><span className="hide-on-med-and-down" style="padding-right: 36px"> Role: </span><span id="workRole"> Shift Manager </span></p>
+                  <p className="workInfo" id="workDes">Two and a half years quickly rising through the ranks to shift manager. Primarily cashier work and renting U-Hauls with minor automotive work.</p>
+                  <a className="waves-light white btn-floating btn-small resBtn" id="workLeft"><i className="material-icons">chevron_left</i></a>
+                  <a className="waves-light white btn-floating btn-small resBtn" id="workRight"><i className="material-icons">chevron_right</i></a>  
+                </div>
+              </div>
+            </div>
+          
+          </div>
+      
+        <!-- Skills -->
+          <div className="row section scrollspy" id="secSkills">
+            <!-- Programming -->
+              <div className="programming col s12 m6 center">
+                <h3> Programming Skills </h3>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fab fa-github proSkill" ></i>
+                  <span className="tooltipText"> Github </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fab fa-gitlab proSkill"></i>
+                  <span className="tooltipText"> Gitlab </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fab fa-html5 proSkill"></i>
+                  <span className="tooltipText"> HTML5 </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fab fa-css3-alt proSkill"></i>
+                  <span className="tooltipText"> CSS3 </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fab fa-js-square proSkill"></i>
+                  <span className="tooltipText"> Javascript </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="icon-jquery proSkill"></i>
+                  <span className="tooltipText"> jQuery </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="icon-reactjs proSkill" id="reactIcon"></i>
+                  <span className="tooltipText"> React </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fab fa-bootstrap proSkill"></i>
+                  <span className="tooltipText"> Bootstrap </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fab fa-node-js proSkill"></i>
+                  <span className="tooltipText"> Node.js </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="icon-heroku proSkill" id="herokuIcon"></i>
+                  <span className="tooltipText"> Heroku </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="icon-mongodb proSkill"></i>
+                  <span className="tooltipText"> Mongo DB </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="icon-mysql-alt proSkill"></i>
+                  <span className="tooltipText"> My SQL </span>
+                </div>
+
+              </div>
+
+            <!-- Hobbies -->
+              <div className="hobbies col s12 m6 center">
+                <h3> Hobbies & Interests </h3>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fas fa-dumbbell hobInt"></i>
+                  <span className="tooltipText"> Working Out </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fas fa-feather-alt hobInt"></i>
+                  <span className="tooltipText"> Writing </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fas fa-book-reader hobInt"></i>
+                  <span className="tooltipText"> Reading </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fas fa-cookie-bite hobInt"></i>
+                  <span className="tooltipText"> Baking </span>
+                </div>
+
+                <div className="skillBack z-depth-2">
+                  <i className="fas fa-gamepad hobInt"></i>
+                  <span className="tooltipText"> Gaming </span>
+                </div>
+              </div>
+          </div>
+      
+        <!-- Portfolio -->
+          <div className="row section scrollspy" id="secPort">
+            
+            <!-- Model -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
+            
+            </div>
+
+            <div className="portfolio col s12 center">
+                <h3> Portfolio </h3>
+      
+                <!-- Word Guess Game -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/wordGuess.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="wordGuess"> Word Guess Game </div>
+                    <a className="deployed" href="https://lmboyle.github.io/wordGuessGame" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/wordGuessGame" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+                
+                <!-- RPG -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/starWars.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="rpg"> Star Wars RPG </div>
+                    <a className="deployed" href="https://lmboyle.github.io/starWarsRPG" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/starWarsRPG" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+      
+                <!-- Triva Game -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/simpsons.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="triva"> Simpsons Triva Game </div>
+                    <a className="deployed" href="https://lmboyle.github.io/simpsonsTrivia" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/simpsonsTrivia" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+      
+                <!-- Gifs -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/giftastic.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="gifs"> GifTastic </div>
+                    <a className="deployed" href="https://lmboyle.github.io/gifTastic/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/gifTastic" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+      
+                <!-- Rock Paper Scissors -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/rps.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="rps"> Rock Paper Scissors </div>
+                    <a className="deployed" href="https://lmboyle.github.io/rpsMultiplayer" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/rpsMultiplayer" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+      
+                <!-- Sports Now -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/sportsNow.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="sportsNow"> Sports Now </div>
+                    <a className="deployed" href="https://lmboyle.github.io/sportsNow" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/sportsNow" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+      
+                <!-- Liri Bot -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/liriBot.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="liri" style="left:-71px"> Liri Bot </div>
+                    <a className="code" href="https://github.com/LMBoyle/liriBot" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Node Word Guess -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/nodeWord.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="nodeWord" style="left:-71px"> Node Word Guess </div>
+                    <a className="code" href="https://github.com/LMBoyle/constructorWordGuess" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Bamazon -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/bamazon.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="bamazon" style="left:-71px"> Bamazon </div>
+                    <a className="code" href="https://github.com/LMBoyle/bamazon" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Friend Finder -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/friendFinder.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="friendFind"> Friend Finder </div>
+                    <span className="code"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></span>
+                    <!-- <a className="deployed" href="https://friend-finder-lmb.herokuapp.com/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a> -->
+                    <a className="code" href="https://github.com/LMBoyle/friendFinder" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Eat Da Burger -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/eatdaburger.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="eatdaburger"> Eat Da Burger </div>
+                    <a className="deployed" href="https://eatdaburger-lmb.herokuapp.com/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/burger" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Eat Da Burger Sequel-->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/eatdaburgersequel.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="eatdaburgersequel"> Eat Da Burger Sequel</div>
+                    <a className="deployed" href="https://eatdaburgersequel-lmb.herokuapp.com/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/burgerSequel" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Death By Docs -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/deathbydoc.png">
+                  <div className="imgButtons">
+                    <div className="imgText" id="newsScraper"> Death By Documents </div>
+                    <a className="deployed" href="https://deathbydoc-lmb.herokuapp.com/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/deathByDocuments" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- News Scraper -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/newsScraper.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="newsScraper"> News Scraper </div>
+                    <a className="deployed" href="https://newsscraper-lmb.herokuapp.com/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/newsScraper" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Clicky Game -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/clickyGame.jpeg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="newsScraper"> Clicky Game </div>
+                    <a className="deployed" href="https://lmboyle.github.io/clickyGame/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/clickyGame" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Google Books -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/googleBooks.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="googleBooks"> Google Books </div>
+                    <a className="deployed" href="https://googlebookssearch-lmb.herokuapp.com/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/googleBooksSearch" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+
+                <!-- Cheapo -->
+                <div className="imgContain">
+                  <img className="portImg" src="assets/img/cheapo.jpg">
+                  <div className="imgButtons">
+                    <div className="imgText" id="cheapo"> Cheapo </div>
+                    <a className="deployed" href="https://cheapo-lmk.herokuapp.com/" target="_blank"><div className="imgIcons"><i className="fas fa-rocket" data-tooltip="Deployed"></i></div></a>
+                    <a className="code" href="https://github.com/LMBoyle/cheapo" target="_blank"><div className="imgIcons"><i className="fas fa-code" data-tooltip="Code"></i></div></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        <!-- Contact Me -->
+          <div className="row section scrollspy" id="secContact">
+            <div className="col s12 center">
+              <h3> Contact Me </h3>
+
+                <div className="col s6 offset-s3 center">
+                  <form className="contact" action="https://formspree.io/xkngaojw" method="POST" role="form">
+                    
+                    <input className="contactInfo" id="contactName" type="text" name="Name" placeholder="John Doe"/>
+                    <label for="contactName"> Name </label>
+
+                    <input className="contactInfo" id="contactEmail" type="email" name="_replyto" placeholder="YourEmail@email.com"/>
+                    <label for="contactEmail"> Email </label>
+
+                    <textarea className="contactInfo" id="contactMessage" name="message" placeholder="Your Message Here"></textarea>
+                    <label for="contactMessage"> Message </label>
+
+                    <br/>
+
+                    <button className="submitBtn">
+                      <input type="submit" value="Submit"/>
+                    </button>
+                  </form>
+                </div>
+
+                <!-- <div id="contactOverlay">
+                  Coming Soon!
+                </div> -->
+            </div>
+          </div>
+      
+        </div> 
+      </div> <!--Close Container-->
+    </main>
+
+    <!-- Footer -->
+    <footer className="page-footer">
+      <div className="footer-copyright">
+        <div className="container" style="opacity: 0.5">
+          <span id="footerText"> &copy; 2021 Luke Boyle </span>
+
+          <div className="footerSocial right">
+              <a href="https://www.linkedin.com/in/lukemboyle">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/LMBoyle">
+                <i className="fab fa-github"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Javascript -->
+  <script src='assets/js/main.js'></script>
+  <script src='assets/js/ScrollSpy.js'></script>
+
+  </body>
+
+</html>
