@@ -593,7 +593,7 @@ div.imgContain {
   margin: 0.4rem 0 0.2rem;
 }
 
-button .deployed {
+button.deployed {
   background: transparent;
   border: none;
   padding: 0;
